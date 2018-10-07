@@ -1,4 +1,5 @@
 # WhoUseAngularInThailand
+The list of companies who use Angular in Thailand
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
