@@ -46,6 +46,6 @@ jobs:
       - run: yarn build:gh
 
       # deploy to GH page
-      - run: yarn ngh --repo=https://$GH_TOKEN@github.com/organisation/who-use-angular-in-thailand.git --dir=dist/who-use-angular-in-thailand --no-silence=false
+      - run: yarn ngh --repo=https://$GH_TOKEN@github.com/organisation/who-use-angular-in-thailand.git --dir=dist/who-use-angular-in-thailand --no-silent=false
 
 
