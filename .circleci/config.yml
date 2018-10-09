@@ -5,12 +5,9 @@
 version: 2
 jobs:
   build:
-     environment:
-      - SOURCE_BRANCH: master
-      - TARGET_BRANCH: gh-pages
-    branches:
+     branches:
       ignore:
-        - $TARGET_BRANCH
+        - gh-page
     docker:
       # specify the version you desire here
       - image: circleci/node:10.11-browsers
@@ -21,7 +18,9 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
-
+    environment:
+      - SOURCE_BRANCH: master
+      - TARGET_BRANCH: gh-pages
     steps:
       - checkout
 
