@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-     branches:
+    branches:
       ignore:
         - gh-page
     docker:
