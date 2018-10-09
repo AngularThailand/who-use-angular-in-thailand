@@ -5,6 +5,12 @@
 version: 2
 jobs:
   build:
+     environment:
+      - SOURCE_BRANCH: master
+      - TARGET_BRANCH: gh-pages
+    branches:
+      ignore:
+        - $TARGET_BRANCH
     docker:
       # specify the version you desire here
       - image: circleci/node:10.11-browsers
@@ -46,6 +52,14 @@ jobs:
       - run: yarn build:gh
 
       # deploy to GH page
-      - run: yarn ngh --repo=https://$GH_TOKEN@github.com/perjerz3434/who-use-angular-in-thailand.git --dir=dist/who-use-angular-in-thailand --name=PerJerZ --email=perjerz3434@gmail.com
+      # - deploy:
+      #     name: Deploy
+      #     command: |
+      #       if[ $CIRCLE_BRANCH === $SOURCE_BRANCH ]; then
+      #         git config user.name $GH_NAME > /dev/null 2>&1
+      #         git config user.email $GH_EMAIL > /dev/null 2>&1
+      #         git clone $CIRCLE_REPOSITORY_URL project
+      #         cd project
+      - run: yarn ngh --repo=https://$GH_TOKEN@github.com/perjerz3434/who-use-angular-in-thailand.git --dir=dist/who-use-angular-in-thailand --name=$GH_NAME --email=$GH_EMAIL
 
 
