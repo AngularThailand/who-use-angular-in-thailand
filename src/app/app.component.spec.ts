@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to who-use-angular-in-thailand!');
+    expect(compiled.querySelector('h1').textContent).toContain('Who use angular in Thailand');
   });
 });
