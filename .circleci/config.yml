@@ -53,7 +53,7 @@ jobs:
       # deploy to GH page
       - deploy:
           name: Deploy
-          command: bash ../deploy.sh
+          command: ../deploy.sh
       # - run: yarn ngh --repo=https://$GH_TOKEN@github.com/perjerz3434/who-use-angular-in-thailand.git --dir=dist/who-use-angular-in-thailand --name=$GH_NAME --email=$GH_EMAIL
 
 
