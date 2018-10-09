@@ -1,8 +1,6 @@
 if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
   git config --global user.name $GH_NAME > /dev/null 2>&1
   git config --global user.email $GH_EMAIL > /dev/null 2>&1
-  pwd
-  ls
   git clone $CIRCLE_REPOSITORY_URL project
   cd project
   ls
@@ -11,7 +9,7 @@ if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
   cd ..
   ls
 
-  cp -a dist/. project/.
+  cp -a dist/who-use-angular-in-thailand/. project/.
 
   mkdir -p project/.circleci && cp -a .circleci/. project/.circleci/.
   ls
