@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@import './material.theme.scss';
+
+html, body {
+  height: 100%;
+  background: map-get($mat-dark-theme-background, 'background');
+}
+
+body {
+  margin: 0;
+}
