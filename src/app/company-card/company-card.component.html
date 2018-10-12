@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{company.name}}</mat-card-title>
+    <mat-card-subtitle>{{company.link}}</mat-card-subtitle>
+  </mat-card-header>
+  <img *ngIf="company.logo as logo" class="logo" mat-card-image [src]="logo" [alt]="company" />
+  <mat-card-content>
+    <p>{{company.description}}</p>
+  </mat-card-content>
+  <mat-card-footer>
+    <ng-container *ngFor="let tech of (company.technologies)">
+      <img *ngIf="tech | techToIcon as icon; else techText" class="logo" [src]="icon" [alt]="tech"/>
+       <ng-template #techText>{{tech}}</ng-template>
+    </ng-container>
+  </mat-card-footer>
+</mat-card>
