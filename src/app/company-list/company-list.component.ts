@@ -9,6 +9,7 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
 })
 export class CompanyListComponent implements OnInit {
   @Input() companies: Company[];
+  @Input() loaded;
   constructor() { }
 
   ngOnInit() { }

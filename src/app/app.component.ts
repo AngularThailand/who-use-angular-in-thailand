@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Company } from './company.model';
-import { map, share } from 'rxjs/operators';
+import { map, share, finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'angular-th-root',
@@ -11,8 +11,15 @@ import { map, share } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   companies$: Observable<Company[]>;
+  loaded = false;
   constructor(private http: HttpClient) { }
   ngOnInit() {
-    this.companies$ = this.http.get<{companies: Company[]}>('/assets/data/companies.json').pipe(map( ({companies}) => companies), share());
+    this.companies$ = this.http.get<{companies: Company[]}>('/assets/data/companies.json').
+    pipe(
+      map(({companies}) => companies),
+      share(),
+      finalize(() => {
+        this.loaded = true;
+    }));
   }
 }

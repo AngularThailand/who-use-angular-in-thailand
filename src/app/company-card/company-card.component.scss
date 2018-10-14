@@ -1,6 +1,13 @@
 :host {
-  .logo {
+  .company-logo {
     width: 100px;
     height: 100px;
+  }
+  .tech-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .description {
+    word-wrap: break-word
   }
 }
