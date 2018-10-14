@@ -1,4 +1,4 @@
-import { mockOrganization } from './../utils/mock-organization';
+import { mockCompany } from '../utils/mock-company';
 import { CompanyCardComponent } from './../company-card/company-card.component';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
@@ -35,7 +35,7 @@ describe('CompanyListComponent', () => {
   });
   it('should render company list when companies loaded', () => {
     component.loaded = true;
-    component.companies = [mockOrganization()];
+    component.companies = [mockCompany()];
     fixture.detectChanges();
     const el = fixture.debugElement.nativeElement;
     const companyCards = el.querySelectorAll('angular-th-company-card');

@@ -1,4 +1,4 @@
-import { mockOrganization } from './../utils/mock-organization';
+import { mockCompany } from './../utils/mock-Company';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
@@ -27,20 +27,20 @@ describe('CompanyCardComponent', () => {
   });
 
   it('should render a company', () => {
-    component.company = mockOrganization();
+    component.company = mockCompany();
     fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 
   it('should show company logo if logo image is provided', () => {
-    component.company = mockOrganization();
+    component.company = mockCompany();
     fixture.detectChanges();
     const logo = fixture.debugElement.query(By.css('.company-logo'));
     expect(logo).toBeTruthy();
   });
 
   it('should not show company logo if logo image is not provided', () => {
-    component.company = mockOrganization({
+    component.company = mockCompany({
       logo: ''
     });
     fixture.detectChanges();
@@ -49,7 +49,7 @@ describe('CompanyCardComponent', () => {
   });
 
   it('should show technologies images if logo image is provided', () => {
-    component.company = mockOrganization();
+    component.company = mockCompany();
     fixture.detectChanges();
     const logos = fixture.debugElement.queryAll(By.css('.company.logo'));
     expect(logos.length).toEqual(component.company.technologies.length);
