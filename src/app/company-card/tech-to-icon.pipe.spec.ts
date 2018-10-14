@@ -1,8 +1,11 @@
 import { TechToIconPipe } from './tech-to-icon.pipe';
 
 describe('TechToIconPipe', () => {
-  it('create an instance', () => {
-    const pipe = new TechToIconPipe();
-    expect(pipe).toBeTruthy();
+  const pipe = new TechToIconPipe();
+  it('should return svg path if does include in the technologies list', () => {
+    expect(pipe.transform('angular')).toContain('assets/images');
+  });
+  it('should return empty string if tech does not include in the technologies list', () => {
+    expect(pipe.transform('react')).toBe('');
   });
 });
