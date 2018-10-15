@@ -1,7 +1,8 @@
 :host {
   .container {
-    @media only screen and (min-width: 600px) {
-      padding-left: 16px;
+    padding-left: 16px;
+    @media only screen and (max-width: 599px) {
+      padding-right: 16px;
     }
   }
   angular-th-company-card {
@@ -9,6 +10,5 @@
     @media only screen and (min-width: 600px) {
       margin-right: 16px;
     }
-
   }
 }
