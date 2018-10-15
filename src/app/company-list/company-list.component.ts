@@ -1,5 +1,5 @@
 import { Company } from './../company.model';
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'angular-th-company-list',
@@ -7,11 +7,9 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
   styleUrls: ['./company-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CompanyListComponent implements OnInit {
+export class CompanyListComponent  {
   @Input() companies: Company[];
   @Input() loaded;
   constructor() { }
-
-  ngOnInit() { }
 
 }

@@ -1,3 +1,4 @@
+import { By } from '@angular/platform-browser';
 import { mockCompany } from '../utils/mock-company';
 import { CompanyCardComponent } from './../company-card/company-card.component';
 import { MatProgressSpinnerModule } from '@angular/material';
@@ -30,15 +31,14 @@ describe('CompanyListComponent', () => {
     component.loaded = false;
     fixture.detectChanges();
     const el = fixture.debugElement.nativeElement;
-    const matSpinner = el.querySelector('mat-progress-spinner');
-    expect(matSpinner).toBeTruthy();
+    const matSpinner = fixture.debugElement.query(By.css('mat-progress-spinner'));
+    expect(matSpinner).not.toBeNull();
   });
   it('should render company list when companies loaded', () => {
     component.loaded = true;
     component.companies = [mockCompany()];
     fixture.detectChanges();
-    const el = fixture.debugElement.nativeElement;
-    const companyCards = el.querySelectorAll('angular-th-company-card');
+    const companyCards = fixture.debugElement.queryAll(By.css('angular-th-company-card'));
     expect(companyCards.length).toEqual(component.companies.length);
   });
 });

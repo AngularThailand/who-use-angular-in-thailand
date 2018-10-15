@@ -23,20 +23,18 @@ describe('CompanyCardComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CompanyCardComponent);
     component = fixture.componentInstance;
+    component.company = mockCompany();
     fixture.detectChanges();
   });
 
   it('should render a company', () => {
-    component.company = mockCompany();
     fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 
   it('should show company logo if logo image is provided', () => {
-    component.company = mockCompany();
-    fixture.detectChanges();
     const logo = fixture.debugElement.query(By.css('.company-logo'));
-    expect(logo).toBeTruthy();
+    expect(logo).not.toBeNull();
   });
 
   it('should not show company logo if logo image is not provided', () => {
@@ -45,13 +43,11 @@ describe('CompanyCardComponent', () => {
     });
     fixture.detectChanges();
     const logo = fixture.debugElement.query(By.css('.company-logo'));
-    expect(logo).toBeFalsy();
+    expect(logo).toBeNull();
   });
 
   it('should show technologies images if logo image is provided', () => {
-    component.company = mockCompany();
-    fixture.detectChanges();
-    const logos = fixture.debugElement.queryAll(By.css('.company.logo'));
+    const logos = fixture.debugElement.queryAll(By.css('.tech-logo'));
     expect(logos.length).toEqual(component.company.technologies.length);
   });
 });

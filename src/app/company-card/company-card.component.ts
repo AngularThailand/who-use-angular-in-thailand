@@ -1,5 +1,5 @@
 import { Company } from './../company.model';
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'angular-th-company-card',
