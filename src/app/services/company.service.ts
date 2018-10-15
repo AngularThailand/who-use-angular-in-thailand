@@ -1,4 +1,4 @@
-import { map, share } from 'rxjs/operators';
+import { map, share, tap, finalize } from 'rxjs/operators';
 import { Company } from './../company.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';

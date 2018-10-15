@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 
 import { CustomMaterialModule } from './shared/custom-material.module';
 import { CompanyCardComponent } from './company-card/company-card.component';
@@ -30,7 +29,6 @@ import { CompanyListComponent } from './company-list/company-list.component';
   imports: [
     CommonModule,
     BrowserModule,
-    AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     CustomMaterialModule,

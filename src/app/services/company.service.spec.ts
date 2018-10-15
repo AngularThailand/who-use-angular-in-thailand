@@ -2,6 +2,7 @@ import { async } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { mockCompany } from './../utils/mock-company';
 import { CompanyService } from './company.service';
+import { tap, share, mapTo } from 'rxjs/operators';
 
 describe('CompanyService', () => {
   it('should destruct companies key into company list', async(() => {
@@ -13,4 +14,29 @@ describe('CompanyService', () => {
       expect(data).toBe(companies);
     });
   }));
+  it('should share a single subscription', () => {
+    let subscriptionCount = 0;
+    const httpMock = { get: jest.fn(() => of({}).pipe(tap(() => subscriptionCount++))) };
+    const service = new CompanyService(httpMock as any);
+    expect(subscriptionCount).toEqual(0);
+    const getCompanies = service.getCompanies();
+    getCompanies.subscribe();
+    getCompanies.subscribe();
+    expect(subscriptionCount).toEqual(1);
+  });
+  it('should share a single subscription', () => {
+    let subscriptionCount = 0;
+    const obs = of({}).pipe(tap(() => {
+      subscriptionCount++;
+    }));
+
+    const source = obs.pipe(share());
+
+    expect(subscriptionCount).toEqual(0);
+
+    source.subscribe();
+    source.subscribe();
+
+    expect(subscriptionCount).toEqual(1);
+  });
 });

@@ -14,8 +14,7 @@ export class AppComponent implements OnInit {
   loaded = false;
   constructor(private companyService: CompanyService) { }
   ngOnInit() {
-    this.companies$ = this.companyService.getCompanies().
-    pipe(
+    this.companies$ = this.companyService.getCompanies().pipe(
       finalize(() => {
         this.loaded = true;
     }));
