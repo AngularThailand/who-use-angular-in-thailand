@@ -1,29 +1,34 @@
 import { mockCompany } from './../utils/mock-Company';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { CommonModule } from '@angular/common';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CompanyCardComponent } from './company-card.component';
 import { TechToIconPipe } from './tech-to-icon.pipe';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { NO_ERRORS_SCHEMA, Component, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
+
+@Component({
+  template: '<angular-th-company-card [company]="company"></angular-th-company-card>'
+})
+class TestHostComponent {
+  company = mockCompany();
+}
 
 describe('CompanyCardComponent', () => {
   let component: CompanyCardComponent;
   let fixture: ComponentFixture<CompanyCardComponent>;
-
+  let companyCardDebugElement: DebugElement;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompanyCardComponent, TechToIconPipe ],
+      declarations: [ TestHostComponent, CompanyCardComponent, TechToIconPipe ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompanyCardComponent);
+    fixture = TestBed.createComponent(TestHostComponent);
     component = fixture.componentInstance;
-    component.company = mockCompany();
+    companyCardDebugElement = fixture.debugElement.childNodes[0] as DebugElement;
     fixture.detectChanges();
   });
 
@@ -33,7 +38,7 @@ describe('CompanyCardComponent', () => {
   });
 
   it('should show company logo if logo image is provided', () => {
-    const logo = fixture.debugElement.query(By.css('.company-logo'));
+    const logo = companyCardDebugElement.query(By.css('.company-logo'));
     expect(logo).not.toBeNull();
   });
 
@@ -42,12 +47,12 @@ describe('CompanyCardComponent', () => {
       logo: ''
     });
     fixture.detectChanges();
-    const logo = fixture.debugElement.query(By.css('.company-logo'));
+    const logo = companyCardDebugElement.query(By.css('.company-logo'));
     expect(logo).toBeNull();
   });
 
   it('should show technologies images if logo image is provided', () => {
-    const logos = fixture.debugElement.queryAll(By.css('.tech-logo'));
+    const logos = companyCardDebugElement.queryAll(By.css('.tech-logo'));
     expect(logos.length).toEqual(component.company.technologies.length);
   });
 });

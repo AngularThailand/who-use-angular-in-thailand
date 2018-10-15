@@ -1,44 +1,48 @@
 import { By } from '@angular/platform-browser';
 import { mockCompany } from '../utils/mock-company';
-import { CompanyCardComponent } from './../company-card/company-card.component';
-import { MatProgressSpinnerModule } from '@angular/material';
-import { CommonModule } from '@angular/common';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CompanyListComponent } from './company-list.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { NO_ERRORS_SCHEMA, Component, DebugElement } from '@angular/core';
+import { of } from 'rxjs';
+
+@Component({
+  template: `<angular-th-company-list [companies]="companies$ | async" [loaded]="loaded"></angular-th-company-list>`
+})
+class TestHostComponent {
+  companies$ = of([mockCompany()]);
+  loaded = false;
+}
 
 describe('CompanyListComponent', () => {
-  let component: CompanyListComponent;
-  let fixture: ComponentFixture<CompanyListComponent>;
-
+  let component: TestHostComponent;
+  let fixture: ComponentFixture<TestHostComponent>;
+  let companyListDebugElement: DebugElement;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompanyListComponent ],
+      declarations: [ CompanyListComponent, TestHostComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompanyListComponent);
+    fixture = TestBed.createComponent(TestHostComponent);
     component = fixture.componentInstance;
+    companyListDebugElement = fixture.debugElement.childNodes[0] as DebugElement;
     fixture.detectChanges();
   });
 
   it('should render spinner when companies not loaded', () => {
     component.loaded = false;
     fixture.detectChanges();
-    const el = fixture.debugElement.nativeElement;
-    const matSpinner = fixture.debugElement.query(By.css('mat-progress-spinner'));
+    const matSpinner = companyListDebugElement.query(By.css('mat-progress-spinner'));
     expect(matSpinner).not.toBeNull();
   });
   it('should render company list when companies loaded', () => {
     component.loaded = true;
-    component.companies = [mockCompany()];
     fixture.detectChanges();
-    const companyCards = fixture.debugElement.queryAll(By.css('angular-th-company-card'));
-    expect(companyCards.length).toEqual(component.companies.length);
+    const companyCards = companyListDebugElement.queryAll(By.css('angular-th-company-card'));
+    expect(companyCards.length).toEqual(1);
   });
 });
