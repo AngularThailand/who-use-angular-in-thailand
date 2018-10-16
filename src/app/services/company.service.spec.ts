@@ -2,7 +2,7 @@ import { async } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { mockCompany } from './../utils/mock-company';
 import { CompanyService } from './company.service';
-import { tap, share } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 
 describe('CompanyService', () => {
   it('should destruct companies key into company list', async(() => {

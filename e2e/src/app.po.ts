@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getParagraphText() {
-    return element(by.css('angular-th-root h1')).getText();
+    return element(by.css('angular-th-header header mat-toolbar mat-toolbar-row')).getText();
   }
 }

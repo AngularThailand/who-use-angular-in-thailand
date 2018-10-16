@@ -11,6 +11,7 @@
     "test:watch": "jest --watch",
     "lint": "ng lint --fix",
     "e2e": "ng e2e",
+    "cypress:ci": "cypress run --record --parallel",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "format": "prettier --write 'src/**/*.{ts.scss}'",

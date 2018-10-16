@@ -21,6 +21,7 @@ jobs:
     environment:
       - SOURCE_BRANCH: master
       - TARGET_BRANCH: gh-pages
+      - TERM: xterm
     steps:
       - checkout
       - add_ssh_keys:
@@ -33,7 +34,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
 
       - save_cache:
           paths:
@@ -46,8 +47,11 @@ jobs:
       # run unit tests!
       - run: yarn test:ci
 
-      # run e2e tests!
-      - run: yarn e2e -- --protractor-config=./e2e/protractor-ci.conf.js
+      # run e2e!
+      - run: yarn e2e
+
+      # run cypress!
+      # - run: yarn cypress:run
 
       # run build
       - run: yarn build:gh
