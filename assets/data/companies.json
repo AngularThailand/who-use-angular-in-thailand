@@ -1,0 +1,11 @@
+{
+  "companies": [
+    {
+      "name": "PerJerZ",
+      "description": "Eat Sleep Code",
+      "logo": "/assets/images/angular.svg",
+      "link": "",
+      "technologies": ["angular","ionic", "nestjs", "ngrx"]
+    }
+  ]
+}
