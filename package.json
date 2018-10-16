@@ -15,7 +15,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "format": "prettier --write 'src/**/*.{ts.scss}'",
-    "build:gh": "ng build --prod --build-optimizer --base-href=/who-use-angular-in-thailand/"
+    "build:gh": "ng build --prod --build-optimizer --base-href=/who-use-angular-in-thailand/ —-deploy-url=/who-use-angular-in-thailand/"
   },
   "private": true,
   "dependencies": {
