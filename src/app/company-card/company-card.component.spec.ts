@@ -1,4 +1,4 @@
-import { mockCompany } from './../utils/mock-Company';
+import { mockCompany } from './../utils/mock-company';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CompanyCardComponent } from './company-card.component';
