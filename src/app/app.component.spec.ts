@@ -1,18 +1,18 @@
-import { CompanyService } from './services/company.service';
-import { TestBed, async } from '@angular/core/testing';
+
 import { AppComponent } from './app.component';
-import { mockCompany } from './utils/mock-company';
 import { of } from 'rxjs';
 
-xdescribe('AppComponent', () => {
-
+describe('AppComponent', () => {
+  const mockCompanyService = {
+    getCompanies: jest.fn(() => of({}))
+  } as any;
+  const app = new AppComponent(mockCompanyService);
+  app.ngOnInit();
+  app.companies$.subscribe();
   it('should call company service once', () => {
-    const mockCompanyService = {
-      getCompanies: jest.fn()
-    } as any;
-    mockCompanyService.getCompanies.mockImplmentationOnce(() => of([mockCompany()]));
-    const app = new AppComponent(mockCompanyService);
-    app.ngOnInit();
-    expect(app.loaded).toBeFalsy();
+    expect(mockCompanyService.getCompanies.mock.calls.length).toEqual(1);
+  });
+  it('should loaded to be true', () => {
+    expect(app.loaded).toBeTruthy();
   });
 });
