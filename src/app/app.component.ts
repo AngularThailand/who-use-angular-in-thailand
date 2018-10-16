@@ -2,7 +2,7 @@ import { CompanyService } from './services/company.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Company } from './company.model';
-import { finalize, tap } from 'rxjs/operators';
+import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'angular-th-root',
