@@ -3,7 +3,7 @@
     {
       "name": "Example Company",
       "description": "Example Company Description",
-      "logo": "/assets/images/angular.svg",
+      "logo": "assets/images/angular.svg",
       "link": "",
       "technologies": ["angular","ionic", "nestjs", "ngrx"]
     }
