@@ -11,7 +11,6 @@ export class HttpInterceptorService implements HttpInterceptor {
       const newRequest = req.clone({
         url: `${environment.baseUrl}${req.url}`
       });
-      console.log(req.url);
       return next.handle(newRequest);
     }
     return next.handle(req);

@@ -7,7 +7,7 @@ export class TechToIconPipe implements PipeTransform {
   transform(tech: string): string {
     const logo = Technologies[tech.toLowerCase()];
     if (logo) {
-      return `/assets/images/${logo}.svg`;
+      return `assets/images/${logo}.svg`;
     }
     return '';
   }
