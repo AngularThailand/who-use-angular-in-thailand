@@ -1,6 +1,7 @@
+import { HttpInterceptorService } from './http-interceptor.service';
 
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +17,7 @@ import { TechToIconPipe } from './company-card/tech-to-icon.pipe';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CompanyListComponent } from './company-list/company-list.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,13 @@ import { CompanyListComponent } from './company-list/company-list.component';
     CustomMaterialModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ...(environment.ghpages ? [
+      {
+        provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true
+      }
+    ] : []),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -48,6 +48,23 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "gh-pages": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.gh-pages.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             }
           }
         },
@@ -59,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "who-use-angular-in-thailand:build:production"
+            },
+            "gh-pages": {
+              "browserTarget": "who-use-angular-in-thailand:build:gh-pages"
             }
           }
         },
@@ -95,6 +115,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "who-use-angular-in-thailand:serve:production"
+            },
+            "gh-pages": {
+              "devServerTarget": "who-use-angular-in-thailand:serve:gh-pages"
             }
           }
         },
