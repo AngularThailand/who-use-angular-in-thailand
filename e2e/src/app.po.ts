@@ -5,7 +5,13 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('angular-th-header header mat-toolbar mat-toolbar-row')).getText();
+  getHeaderText() {
+    return element.all(by.css('mat-toolbar-row')).first().getText();
+  }
+  getFirstCompanyName() {
+    return element(
+      by.
+      css('mat-card-title'))
+      .getText();
   }
 }

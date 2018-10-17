@@ -3,6 +3,12 @@ describe('AppComponent', () => {
   it(`should contain header text with \"${headerText}\"`, () => {
     cy
     .visit('/')
-    .get('angular-th-header > header > mat-toolbar > mat-toolbar-row').contains(headerText);
+    .get('mat-toolbar-row').contains(headerText);
+  });
+  it('should contain at least one company title', () => {
+    cy
+    .visit('/')
+    .get('mat-card-title')
+    .exist;
   });
 });
