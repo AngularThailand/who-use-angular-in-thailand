@@ -6,10 +6,10 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
-          "/favicon.ico",
-          "/index.html",
-          "/*.css",
-          "/*.js"
+          "./favicon.ico",
+          "./index.html",
+          "./*.css",
+          "./*.js"
         ]
       }
     }, {
@@ -18,7 +18,7 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**"
+          "./assets/**"
         ]
       }
     }
@@ -26,7 +26,7 @@
   "dataGroups": [{
     "name": "api-freshness",
     "urls": [
-      "/assets/data"
+      "./assets/data"
     ],
     "cacheConfig": {
       "maxSize": 100,
