@@ -1,0 +1,9 @@
+{
+  "/who-use-angular-in-thailand": {
+    "target": "/",
+    "secure": false,
+    "pathRewrite": {
+      "^/who-use-angular-in-thailand": "/"
+    }
+  }
+}
