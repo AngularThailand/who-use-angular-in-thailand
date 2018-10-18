@@ -4,8 +4,8 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/who-use-angular-in-thailand",
+  "start_url": "/who-use-angular-in-thailand",
   "icons": [
     {
       "src": "assets/icons/icon-512x512.png",
