@@ -74,7 +74,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "who-use-angular-in-thailand:build",
-            "proxyConfig": "proxy-conf.json"
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
