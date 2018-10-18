@@ -23,16 +23,24 @@
       }
     }
   ],
-  "dataGroups": [
-    {
-      "name": "data",
-      "urls": ["/assets/data"],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 100,
-        "maxAge": "",
-        "timeout": "10s"
-      }
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "/assets/data"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "1h",
+      "timeout": "10s",
+      "strategy": "freshness"
     }
-  ]
+  }, {
+    "name": "api-performance",
+    "urls": [],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "1d",
+      "strategy": "performance"
+    }
+  }]
 }
