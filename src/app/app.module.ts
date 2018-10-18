@@ -17,7 +17,8 @@ import { TechToIconPipe } from './company-card/tech-to-icon.pipe';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CompanyListComponent } from './company-list/company-list.component';
-import { environment } from 'src/environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { environment } from 'src/environments/environment';
     FlexLayoutModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     ...(environment.ghpages ? [
