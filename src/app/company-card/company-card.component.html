@@ -8,7 +8,7 @@
     <p class="description">{{company.description}}</p>
   </mat-card-content>
   <mat-card-footer>
-    <div fxLayout="row wrap" fxLayoutAlign="space-around">
+    <div fxLayout="row wrap" fxLayoutAlign="start">
       <ng-container *ngFor="let tech of company.technologies">
         <img *ngIf="tech | techToIcon as icon; else techText" class="tech-logo" [src]="icon" [alt]="tech"/>
         <ng-template #techText>{{tech}}</ng-template>
