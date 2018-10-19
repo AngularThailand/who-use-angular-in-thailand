@@ -13,8 +13,8 @@ JSON object must follow the format below.
 - name: Company's name (required)
 - description: Company's description (required)
 - logo: Company logo's URL (optional)
-- companyUrl: Company's URL (required)
-- productUrls: Company products's URL using Angular ecosystem (optional)
+- companyUrl: Company's URL (required) (with http/https)
+- productUrls: Company products's URL using Angular ecosystem (optional) (with http/https)
 - technologies: Technologies to build your product related to Angular: rxjs, angular, angularjs, typescript, ionic, nest, ngrx, nativescript, electron (required at least one)
 
 For instance:
@@ -24,8 +24,8 @@ For instance:
       "name": "Example Company",
       "description": "Example Company Description",
       "logo": "assets/images/angular.svg",
-      "companyUrl": "www.example.com",
-      "productUrls": ["www.example.com", "www.example.com"],
+      "companyUrl": "http://example.com",
+      "productUrls": ["http://example.com", "http://example.com"],
       "technologies": ["angularjs", "angular","ionic", "nestjs", "ngrx"]
     }
 ```
