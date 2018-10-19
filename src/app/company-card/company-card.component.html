@@ -1,11 +1,21 @@
 <mat-card fxLayout="column" *ngIf="company">
   <mat-card-header>
     <mat-card-title>{{company.name}}</mat-card-title>
-    <mat-card-subtitle><a [href]="company.link">{{company.link}}</a></mat-card-subtitle>
+    <mat-card-subtitle *ngIf="company.companyUrl as url">
+      <a [href]="url" target="_blank" rel="noopener">{{url}}</a>
+    </mat-card-subtitle>
   </mat-card-header>
-  <img fxFlexAlign="center" *ngIf="company.logo as logo" class="company-logo" [src]="logo" [alt]="company.name" />
+  <img *ngIf="company.logo as logo" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
   <mat-card-content>
     <p class="description">{{company.description}}</p>
+  </mat-card-content>
+  <mat-card-content *ngIf="company.productUrls.length > 0">
+    <div fxLayout="column" fxLayoutAlign="start">
+      <b>Product:</b>
+      <ng-container *ngFor="let url of company.productUrls">
+        <a [href]="url" target="_blank" rel="noopener">{{url}}</a>
+      </ng-container>
+    </div>
   </mat-card-content>
   <mat-card-footer>
     <div fxLayout="row wrap" fxLayoutAlign="start">
@@ -13,6 +23,6 @@
         <img *ngIf="tech | techToIcon as icon; else techText" class="tech-logo" [src]="icon" [alt]="tech"/>
         <ng-template #techText>{{tech}}</ng-template>
       </ng-container>
-  </div>
+    </div>
   </mat-card-footer>
 </mat-card>

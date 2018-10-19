@@ -4,7 +4,8 @@
       "name": "Example Company",
       "description": "Example Company Description",
       "logo": "assets/images/angular.svg",
-      "link": "",
+      "companyUrl": "http://example.com",
+      "productUrls": ["http://example.com","http://example.com"],
       "technologies": ["angular","ionic", "nestjs", "ngrx"]
     }
   ]
