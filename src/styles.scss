@@ -2,10 +2,6 @@
 @import '~@angular/material/theming';
 @import './material.theme.scss';
 
-html, body {
-  background: map-get($mat-dark-theme-background, 'background');
-}
-
 body {
   margin: 0;
 }
