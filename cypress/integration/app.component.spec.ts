@@ -1,5 +1,5 @@
 describe('AppComponent', () => {
-  const headerText = 'Who use Angular(JS) in Thailand';
+  const headerText = 'Who use Angular in Thailand';
   it(`should contain header text with \"${headerText}\"`, () => {
     cy
     .visit('/')
@@ -9,6 +9,6 @@ describe('AppComponent', () => {
     cy
     .visit('/')
     .get('mat-card-title')
-    .exist;
+    .should('not.be.undefined');
   });
 });

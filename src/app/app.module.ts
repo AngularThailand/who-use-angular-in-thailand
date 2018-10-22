@@ -1,4 +1,5 @@
-import { AngularThModule } from './../../projects/angular-th/src/lib/angular-th-libs.module';
+import { AngularThModule } from 'angular-th';
+
 import { HttpInterceptorService } from './interceptors/http-interceptor.service';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
