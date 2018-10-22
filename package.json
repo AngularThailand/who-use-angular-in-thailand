@@ -9,7 +9,6 @@
     "test": "jest",
     "test:lib": "jest --config ./jest.libs.config.js --runInBand",
     "test:app": "jest --config ./jest.app.config.js --runInBand",
-    "test:ci": "npm run test:lib && npm run test:app",
     "pretest": "jest --clearCache",
     "test:watch": "jest --watch",
     "lint": "ng lint --fix",
