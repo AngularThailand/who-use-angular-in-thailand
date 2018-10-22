@@ -1,10 +1,10 @@
-import { By } from '@angular/platform-browser';
-import { mockCompany } from '../../utils/mock-company';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CompanyListComponent } from './company-list.component';
 import { NO_ERRORS_SCHEMA, Component, DebugElement } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 import { of } from 'rxjs';
+
+import { mockCompany } from '../../utils/mock-company';
+import { CompanyListComponent } from './company-list.component';
 
 @Component({
   template: `<angular-th-company-list [companies]="companies$ | async" [loaded]="loaded"></angular-th-company-list>`

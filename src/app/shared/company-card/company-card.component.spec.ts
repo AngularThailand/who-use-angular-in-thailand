@@ -1,10 +1,11 @@
-import { mockCompany } from './../../utils/mock-company';
+import { NO_ERRORS_SCHEMA, Component, DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
+import { mockCompany } from './../../utils/mock-company';
 import { CompanyCardComponent } from './company-card.component';
 import { TechToIconPipe } from './tech-to-icon.pipe';
-import { NO_ERRORS_SCHEMA, Component, DebugElement } from '@angular/core';
-import { By } from '@angular/platform-browser';
+
 
 @Component({
   template: '<angular-th-company-card [company]="company"></angular-th-company-card>'
