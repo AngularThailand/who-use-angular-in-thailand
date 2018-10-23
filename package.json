@@ -19,7 +19,8 @@
     "format": "prettier --write 'src/**/*.{ts.scss}'",
     "build:gh": "ng build --configuration=gh-pages --deploy-url /who-use-angular-in-thailand/ --base-href /who-use-angular-in-thailand/",
     "build:prod": "ng build --configuration=production",
-    "analyze": "npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/who-use-angular-in-thailand/stats.json"
+    "analyze": "npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/who-use-angular-in-thailand/stats.json",
+    "ng-packagr:angular-th": "ng-packagr -p projects/angular-th/package.json"
   },
   "private": true,
   "dependencies": {
