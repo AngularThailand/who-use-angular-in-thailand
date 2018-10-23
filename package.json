@@ -13,7 +13,7 @@
     "test:watch": "jest --watch",
     "lint:lib": "ng lint angular-th --fix",
     "lint:app:who": "ng lint who-use-angular-in-thailand --fix",
-    "e2e:who-use": "ng e2e who-use-angular-in-thailand",
+    "e2e": "ng e2E",
     "cypress:ci": "cypress run --record --parallel",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
