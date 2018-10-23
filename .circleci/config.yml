@@ -42,7 +42,8 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run lint!
-      - run: yarn lint
+      - run: yarn lint:lib
+      - run: yarn lint:app:who
 
       # run lib unit tests!
       - run: yarn test:lib
