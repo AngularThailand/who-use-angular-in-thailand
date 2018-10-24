@@ -3,7 +3,6 @@ import { Observable, throwError } from 'rxjs';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { QuizCard } from './models/quiz.model';
 import { finalize, catchError } from 'rxjs/operators';
-import { any } from 'bluebird';
 
 @Component({
   selector: 'angular-quiz-root',
