@@ -16,8 +16,8 @@ describe('CompanyService', () => {
   }));
   it('should share a single subscription', () => {
     let subscriptionCount = 0;
-    const httpMock = { get: jest.fn(() => of({}).pipe(tap(() => subscriptionCount++))) };
-    const service = new CompanyService(httpMock as any);
+    const httpMock = { get: jest.fn(() => of({}).pipe(tap(() => subscriptionCount++))) } as any;
+    const service = new CompanyService(httpMock);
     expect(subscriptionCount).toEqual(0);
     const getCompanies = service.getCompanies();
     getCompanies.subscribe();
