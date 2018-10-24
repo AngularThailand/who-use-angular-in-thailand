@@ -111,3 +111,18 @@ export interface TwitterSearchResponse {
   statuses: Status[];
   search_metadata: SearchMetaData;
 }
+
+export interface TwitterFetcher {
+  author: string;
+  author_data: {
+    profile_url: string, profile_image: string, profile_image_2x: string, screen_name: string, name: string
+  };
+  image: string;
+  images: string;
+  permalinkURL: string;
+  rt: boolean;
+  tid: string;
+  time: string;
+  timestamp: string;
+  tweet: string;
+}

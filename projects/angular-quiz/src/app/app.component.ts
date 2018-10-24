@@ -2,7 +2,7 @@ import { AngularQuizService } from './services/angular-quiz.service';
 import { Observable, throwError } from 'rxjs';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { QuizCard } from './models/quiz.model';
-import { finalize, catchError } from 'rxjs/operators';
+import { finalize, catchError, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'angular-quiz-root',
@@ -17,7 +17,8 @@ export class AppComponent implements OnInit {
   constructor(private angularQuizService: AngularQuizService) { }
 
   ngOnInit() {
-    this.quizzes$ = this.angularQuizService.getAllScores().pipe(
+    this.quizzes$ = this.angularQuizService.getTwitterFetch().pipe(
+      tap(val => { console.log(val); }),
       catchError(err => {
         this.error = err;
         return throwError(err);
@@ -26,7 +27,5 @@ export class AppComponent implements OnInit {
         this.loaded = true;
       })
     );
-    const tweets = this.angularQuizService.getTwitterFetch();
-    console.log(tweets);
   }
 }

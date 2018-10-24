@@ -1,16 +1,19 @@
 import { API_TWITTER_URL } from './twitter-api';
 import { QuizCard } from './../models/quiz.model';
-import { map, shareReplay, tap, catchError } from 'rxjs/operators';
+import { map, shareReplay, catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { TwitterSearchResponse } from '../models/twitter.model';
-import { of } from 'rxjs';
+import { TwitterSearchResponse, TwitterFetcher } from '../models/twitter.model';
+import { of, ReplaySubject, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AngularQuizService {
-  constructor(private http: HttpClient) {}
+  twitterSubject$: ReplaySubject<TwitterFetcher[]>;
+  constructor(private http: HttpClient) {
+    this.twitterSubject$ = new ReplaySubject(1);
+  }
   getAllScores() {
     const fromObject = { q: '#angularth-quiz', result_type: 'mixed', maximum: '100', includes_entities: 'true' };
     const params = new HttpParams({ fromObject });
@@ -42,9 +45,13 @@ export class AngularQuizService {
     );
   }
   getTwitterFetch() {
+    const twitterCallback = (tweets) => {
+      this.twitterSubject$.next(tweets);
+      this.twitterSubject$.complete();
+    };
     const configLikes = {
       likes: { screenName: 'AngularThailand' },
-      // domId: 'example2',
+      domId: 'example1',
       maxTweets: 100,
       enableLinks: true,
       showUser: true,
@@ -52,7 +59,26 @@ export class AngularQuizService {
       showImages: true,
       dataOnly: true,
       lang: 'en',
+      customCallback: twitterCallback
     };
-    return twitterFetcher.fetch();
+    twitterFetcher.fetch(configLikes);
+    return this.twitterSubject$.asObservable()
+      .pipe(
+        tap(val => { console.log(val); }),
+        map(tweets => tweets
+          .map(tweet => ({
+            name: tweet.author_data.name,
+            profileImg: tweet.author_data.profile_image,
+            date: tweet.timestamp,
+            img: tweet.author_data.profile_image,
+            tweet: tweet.tweet,
+            url: tweet.permalinkURL,
+          })
+        )
+      ),
+      catchError(err => {
+        return throwError(err);
+      })
+    );
   }
 }
