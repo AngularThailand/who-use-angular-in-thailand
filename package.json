@@ -13,7 +13,8 @@
     "test:watch": "jest --watch",
     "lint:lib": "ng lint angular-th --fix",
     "lint:app:who": "ng lint who-use-angular-in-thailand --fix",
-    "e2e": "ng e2e",
+    "lint:app:quiz": "ng lint angular-quiz --fix",
+    "e2e": "ng e2e who-use-angular-in-thailand-e2e",
     "cypress:ci": "cypress run --record --parallel",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
@@ -21,7 +22,8 @@
     "build:gh": "ng build --configuration=gh-pages --deploy-url /who-use-angular-in-thailand/ --base-href /who-use-angular-in-thailand/",
     "build:prod": "ng build --configuration=production",
     "analyze": "npm run build:prod -- --stats-json && webpack-bundle-analyzer ./dist/who-use-angular-in-thailand/stats.json",
-    "ng-packagr:angular-th": "ng-packagr -p projects/angular-th/package.json"
+    "ng-packagr:angular-th": "ng-packagr -p projects/angular-th/package.json",
+    "ci": "npm run lint:lib && npm run lint:app:who && npm run test:lib && npm run build:lib && npm run test:app && npm run e2e && npm run cypress:run"
   },
   "private": true,
   "dependencies": {
