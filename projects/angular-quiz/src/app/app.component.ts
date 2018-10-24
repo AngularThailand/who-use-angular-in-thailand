@@ -19,5 +19,7 @@ export class AppComponent implements OnInit {
     this.quizzes$ = this.angularQuizService.getAllScores().pipe(finalize(() => {
       this.loaded = true;
     }));
+    const tweets = this.angularQuizService.getTwitterFetch();
+    console.log(tweets);
   }
 }

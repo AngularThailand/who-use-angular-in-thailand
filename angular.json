@@ -196,7 +196,9 @@
             "styles": [
               "projects/angular-quiz/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "projects/angular-quiz/src/assets/js/twitterFetcher_min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -240,23 +242,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "angular-quiz:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/angular-quiz/src/test.ts",
-            "polyfills": "projects/angular-quiz/src/polyfills.ts",
-            "tsConfig": "projects/angular-quiz/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-quiz/karma.conf.js",
-            "styles": [
-              "projects/angular-quiz/src/styles.scss"
-            ],
-            "scripts": [],
-            "assets": [
-              "projects/angular-quiz/src/favicon.ico",
-              "projects/angular-quiz/src/assets"
-            ]
           }
         },
         "lint": {

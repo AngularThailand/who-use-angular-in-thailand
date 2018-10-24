@@ -1,4 +1,4 @@
-interface SearchMetaData {
+export interface SearchMetaData {
   completed_in: number;
   max_id: number;
   max_id_str: string;
@@ -6,10 +6,10 @@ interface SearchMetaData {
   query: string;
   count: number;
   since_id: number;
-  since_id_str: number;
+  since_id_str: string;
 }
 
-interface Status {
+export interface Status {
   created_at: string;
   id: number;
   id_str: string;
@@ -39,7 +39,7 @@ interface Status {
   in_reply_to_user_id_str: string | null;
   in_reply_to_screen_name: string | null;
   user: {
-    id: string;
+    id: number;
     id_str: string;
     name: string;
     screen_name: string;
