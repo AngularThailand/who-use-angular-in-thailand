@@ -9,7 +9,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 })
 export class CompanyListComponent  {
   @Input() companies: Company[];
-  @Input() loaded;
+  @Input() loaded: boolean;
   constructor() { }
 
 }
