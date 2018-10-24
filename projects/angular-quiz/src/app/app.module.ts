@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularThModule } from 'angular-th';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     HttpClientModule,
     AngularThModule
   ],

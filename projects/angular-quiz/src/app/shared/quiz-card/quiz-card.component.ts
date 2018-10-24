@@ -1,5 +1,5 @@
 import { QuizCard } from './../../models/quiz.model';
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
   selector: 'angular-quiz-quiz-card',
@@ -8,6 +8,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class QuizCardComponent {
-  quizCard: QuizCard;
+  @Input() quizCard: QuizCard;
   constructor() { }
 }

@@ -1,22 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { QuizCardComponent } from './quiz-card.component';
+
+import { QuizListComponent } from './quiz-list.component';
 
 
-describe('QuizCardComponent', () => {
-  let component: QuizCardComponent;
-  let fixture: ComponentFixture<QuizCardComponent>;
+describe('QuizListComponent', () => {
+  let component: QuizListComponent;
+  let fixture: ComponentFixture<QuizListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuizCardComponent ],
+      declarations: [ QuizListComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuizCardComponent);
+    fixture = TestBed.createComponent(QuizListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

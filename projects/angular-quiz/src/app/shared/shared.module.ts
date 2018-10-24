@@ -1,9 +1,11 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatCardModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MatCardModule, MatIconModule, MatButtonModule, MatProgressSpinnerModule } from '@angular/material';
 
 import { QuizCardComponent } from './quiz-card/quiz-card.component';
+import { QuizListComponent } from './quiz-list/quiz-list.component';
 
 @NgModule({
   imports: [
@@ -11,11 +13,14 @@ import { QuizCardComponent } from './quiz-card/quiz-card.component';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatProgressSpinnerModule,
+    HttpClientModule,
   ],
-  declarations: [QuizCardComponent],
+  declarations: [QuizCardComponent, QuizListComponent],
   exports: [
-    QuizCardComponent
+    QuizCardComponent,
+    QuizListComponent
   ]
 })
 export class SharedModule { }

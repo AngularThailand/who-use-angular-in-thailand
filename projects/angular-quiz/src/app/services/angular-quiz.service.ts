@@ -1,3 +1,5 @@
+import { QuizCard } from './../models/quiz.model';
+import { map, shareReplay } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TwitterSearchResponse } from '../models/twitter.model';
@@ -18,6 +20,21 @@ export class AngularQuizService {
         oauth_token="access-token-for-authed-user", oauth_version="1.0"`
     });
     const options = { headers, params };
-    return this.httpClient.get<TwitterSearchResponse>('https://api.twitter.com/1.1/search/tweets.json', options );
+    return this.httpClient.get<TwitterSearchResponse>('https://api.twitter.com/1.1/search/tweets.json', options )
+    .pipe(
+      map(twitter => {
+        return twitter.statuses
+          .filter(status => !status.retweeted)
+          .map(status => ({
+            name: status.user.screen_name,
+            profileImg: status.user.profile_image_url_https,
+            date: status.created_at,
+            img: status.entities.urls[0].url,
+            tweet: status.text,
+            url: status.entities.urls[0].url,
+          }) as QuizCard);
+      }),
+      shareReplay(1)
+    );
   }
 }
