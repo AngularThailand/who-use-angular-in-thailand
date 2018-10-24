@@ -1,15 +1,16 @@
 import { API_TWITTER_URL } from './twitter-api';
 import { QuizCard } from './../models/quiz.model';
-import { map, shareReplay } from 'rxjs/operators';
+import { map, shareReplay, tap, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TwitterSearchResponse } from '../models/twitter.model';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AngularQuizService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(private http: HttpClient) {}
   getAllScores() {
     const fromObject = { q: '#angularth-quiz', result_type: 'mixed', maximum: '100', includes_entities: 'true' };
     const params = new HttpParams({ fromObject });
@@ -20,7 +21,7 @@ export class AngularQuizService {
         oauth_token="access-token-for-authed-user", oauth_version="1.0"`,
     });
     const options = { headers, params };
-    return this.httpClient.get<TwitterSearchResponse>(API_TWITTER_URL, options).pipe(
+    return this.http.get<TwitterSearchResponse>(API_TWITTER_URL, options).pipe(
       map(twitter => {
         return twitter.statuses.filter(status => !status.retweeted).map(
           status =>
@@ -33,6 +34,9 @@ export class AngularQuizService {
               url: status.entities.urls[0].url,
             } as QuizCard),
         );
+      }),
+      catchError(err => {
+        return of(err);
       }),
       shareReplay(1),
     );

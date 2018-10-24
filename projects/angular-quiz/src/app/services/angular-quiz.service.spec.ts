@@ -1,4 +1,3 @@
-import { HttpParams, HttpHeaders } from '@angular/common/http';
 import { mockQuiz } from './../utils/mockQuiz';
 import { tap } from 'rxjs/operators';
 import { mockStatus } from './../utils/mockTwitter';

@@ -9,7 +9,6 @@ import { environment } from '../environments/environment';
 import { HttpInterceptorService } from './interceptors/http-interceptor.service';
 import { SharedModule } from './shared/shared.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
