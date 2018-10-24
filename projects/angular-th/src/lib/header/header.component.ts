@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Input() logo: string;
   @Input() titleEn: string;
   @Input() titleTh: string;
   @Input() actionUrl: string;
