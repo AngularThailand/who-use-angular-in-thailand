@@ -87,16 +87,22 @@
   }
 
   function extractImagesUrl(image_data) {
-    if (image_data !== undefined && image_data.innerHTML.indexOf('data-image') >= 0) {
-      var data_src = image_data.innerHTML.match(/data-image=\"([A-z0-9]+:\/\/[A-z0-9]+\.[A-z0-9]+\.[A-z0-9]+\/[A-z0-9]+\/[A-z0-9\-]+)\"/ig);
-      for (var i = 0; i < data_src.length; i++) {
-        data_src[i] = data_src[i].match(/data-image=\"([A-z0-9]+:\/\/[A-z0-9]+\.[A-z0-9]+\.[A-z0-9]+\/[A-z0-9]+\/[A-z0-9\-]+)\"/i)[1];
-        data_src[i] = decodeURIComponent(data_src[i]) + '.jpg';
+    if (image_data !== undefined) {
+      if (image_data.innerHTML.indexOf('data-image') >= 0) {
+        var data_src = image_data.innerHTML.match(/data-image=\"([A-z0-9]+:\/\/[A-z0-9]+\.[A-z0-9]+\.[A-z0-9]+\/[A-z0-9]+\/[A-z0-9\-]+)\"/ig);
+        for (var i = 0; i < data_src.length; i++) {
+          data_src[i] = data_src[i].match(/data-image=\"([A-z0-9]+:\/\/[A-z0-9]+\.[A-z0-9]+\.[A-z0-9]+\/[A-z0-9]+\/[A-z0-9\-]+)\"/i)[1];
+          data_src[i] = decodeURIComponent(data_src[i]) + '.jpg';
+        }
+        return data_src;
       }
-      return data_src;
+      else if (image_data.innerHTML.indexOf('<img class="u-block"') >= 0) {
+        const data = image_data.querySelector('img.u-block').src;
+        return [data];
+      }
     }
   }
- 
+
 
   var twitterFetcher = {
     fetch: function(config) {
@@ -232,7 +238,7 @@
           var screenName = element.getElementsByTagName('a')[0]
               .getAttribute('href').split('twitter.com/')[1];
           var img = document.createElement('img');
-          img.setAttribute('src', 'https://twitter.com/' + screenName + 
+          img.setAttribute('src', 'https://twitter.com/' + screenName +
               '/profile_image?size=bigger');
           element.prepend(img);
         }
@@ -318,9 +324,9 @@
             author: authors[n] ? authors[n].innerHTML : 'Unknown Author',
             author_data: {
               profile_url: authors[n] ? authors[n].querySelector('[data-scribe="element:user_link"]').href : null,
-              profile_image: authors[n] ? 
-              'https://twitter.com/' + authors[n].querySelector('[data-scribe="element:screen_name"]').title.split('@')[1] + '/profile_image?size=bigger' : null,
-              profile_image_2x: authors[n] ? 'https://twitter.com/' + authors[n].querySelector('[data-scribe="element:screen_name"]').title.split('@')[1] + '/profile_image?size=original' : null,
+              profile_image: authors[n] ?
+                authors[n].querySelector('.Avatar').getAttribute('data-src-1x'): null,
+              profile_image_2x: authors[n] ? authors[n].querySelector('.Avatar').getAttribute('data-src-2x') : null,
               screen_name: authors[n] ? authors[n].querySelector('[data-scribe="element:screen_name"]').title : null,
               name: authors[n] ? authors[n].querySelector('[data-scribe="element:name"]').title : null
             },
@@ -461,12 +467,12 @@
       value: function prepend() {
         var argArr = Array.prototype.slice.call(arguments),
           docFrag = document.createDocumentFragment();
-        
+
         argArr.forEach(function (argItem) {
           var isNode = argItem instanceof Node;
           docFrag.appendChild(isNode ? argItem : document.createTextNode(String(argItem)));
         });
-        
+
         this.insertBefore(docFrag, this.firstChild);
       }
     });
