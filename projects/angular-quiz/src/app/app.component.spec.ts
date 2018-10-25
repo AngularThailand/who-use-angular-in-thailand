@@ -5,7 +5,8 @@ import { of } from 'rxjs';
 describe('AppComponent', () => {
   const quizzes = [mockQuiz()];
   const mockAngularQuizService = { getAllScores: jest.fn(() => of(quizzes) ), getTwitterFetch: jest.fn(() => of(quizzes)) } as any;
-  const app = new AppComponent(mockAngularQuizService);
+  const mockChangeDetectorRef = { detectChanges: jest.fn() } as any;
+  const app = new AppComponent(mockAngularQuizService, mockChangeDetectorRef) ;
   app.ngOnInit();
   app.quizzes$.subscribe();
   it('should call company service once', () => {
