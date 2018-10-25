@@ -1,6 +1,6 @@
 import { API_TWITTER_URL } from './twitter-api';
 import { QuizCard } from './../models/quiz.model';
-import { map, shareReplay, catchError, tap } from 'rxjs/operators';
+import { map, shareReplay, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TwitterSearchResponse, TwitterFetcher } from '../models/twitter.model';
@@ -58,19 +58,20 @@ export class AngularQuizService {
       showTime: true,
       showImages: true,
       dataOnly: true,
+      useEmoji: true,
       lang: 'en',
       customCallback: twitterCallback
     };
     twitterFetcher.fetch(configLikes);
     return this.twitterSubject$.asObservable()
       .pipe(
-        tap(val => { console.log(val); }),
         map(tweets => tweets
           .map(tweet => ({
             name: tweet.author_data.name,
-            profileImg: tweet.author_data.profile_image,
-            date: tweet.timestamp,
-            img: tweet.author_data.profile_image,
+            profileImg: tweet.author_data.profile_image_2x,
+            date: new Date(tweet.timestamp).toLocaleDateString('th-TH',
+              { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'}),
+            img: tweet.image,
             tweet: tweet.tweet,
             url: tweet.permalinkURL,
           })
