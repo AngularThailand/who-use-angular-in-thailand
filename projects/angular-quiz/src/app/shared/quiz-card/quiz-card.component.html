@@ -6,7 +6,7 @@
   </mat-card-header>
   <img *ngIf="quizCard.img as img" mat-card-image [src]="img" alt="Angular scores">
   <mat-card-content *ngIf="quizCard.tweet as tweet">
-    <p>{{tweet}}</p>
+    <p [innerHTML]="tweet"></p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>
