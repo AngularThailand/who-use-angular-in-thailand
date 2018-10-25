@@ -52,7 +52,7 @@ export class AngularQuizService {
     const configLikes = {
       likes: { screenName: 'AngularThailand' },
       domId: 'example1',
-      maxTweets: 100,
+      maxTweets: 200,
       enableLinks: true,
       showUser: true,
       showTime: true,
