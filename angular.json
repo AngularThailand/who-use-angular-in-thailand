@@ -197,7 +197,7 @@
               "projects/angular-quiz/src/styles.scss"
             ],
             "scripts": [
-              "projects/angular-quiz/src/assets/js/twitterFetcher_min.js"
+              "projects/angular-quiz/src/assets/js/twitterFetcher.js"
             ]
           },
           "configurations": {
