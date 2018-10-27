@@ -5,7 +5,13 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('angular-quiz-root h1')).getText();
+  getHeaderText() {
+    return element.all(by.css('mat-toolbar-row')).first().getText();
+  }
+  getQuizCardName() {
+    return element(
+      by.
+      css('mat-card-title'))
+      .getText();
   }
 }
