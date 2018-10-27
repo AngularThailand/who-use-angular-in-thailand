@@ -1,0 +1,24 @@
+languaes: node_js
+node_js:
+  - "10"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+    - master
+
+before_script:
+
+script:
+  - npm run lint:lib
+  - npm run lint:app:quiz
+  - npm run test:lib
+  - npm run build:lib
+  - npm run test:quiz
+  - npm run buid:quiz
+
+deploy:
+ provider: firebase
+  token:
+    secure: "YOUR ENCRYPTED token"
