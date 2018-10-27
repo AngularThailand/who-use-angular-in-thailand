@@ -52,10 +52,10 @@ jobs:
       - run: yarn build:lib
 
       # run app unit tests!
-      - run: yarn test:app
+      - run: yarn test:app:who
 
       # run e2e!
-      - run: yarn e2e -- --protractor-config=./e2e/protractor-ci.conf.js
+      - run: yarn e2e:app:who
 
       # run cypress!
       # - run: yarn cypress:run
