@@ -14,7 +14,7 @@ cache:
 install:
   - npm i -g npm@latest
   - npm install -g @angular/cli@latest
-  - npm install
+  - npm ci
 script:
 - npm run lint:lib
 - npm run lint:app:quiz
@@ -22,7 +22,7 @@ script:
 - npm run build:lib
 - npm run test:app:quiz
 - npm run e2e:app:quiz
-- npm run buid:app:quiz
+- npm run build:app:quiz
 deploy:
   provider: firebase
 env:
