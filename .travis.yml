@@ -1,12 +1,17 @@
 languaes: node_js
 node_js:
-  - '10'
+  - "10"
 dist: trusty
 sudo: required
 branches:
   only:
     - master
-before_script:
+addons:
+  chrome: stable
+cache:
+  directories:
+  - $HOME/.npm
+install:
   - npm i -g npm@latest
   - npm install -g @angular/cli@latest
 script:
