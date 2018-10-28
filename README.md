@@ -11,11 +11,11 @@ In order to add a company to this repo, you have to submit pull request so as to
 JSON object must follow the format below.
 
 - name: Company's name (required)
-- description: Company's description (required)
+- description: Company's description (required) (with http/https)
 - logo: Company logo's URL (optional)
 - companyUrl: Company's URL (required) (with http/https)
 - productUrls: Company products's URL using Angular ecosystem (optional) (with http/https)
-- technologies: Technologies to build your product related to Angular: rxjs, angular, angularjs, typescript, ionic, nest, ngrx, nativescript, electron (required at least one)
+- technologies: Technologies to build your product related to Angular: rxjs, angular, angularjs, typescript, ionic, nest, ngrx, nativescript, electron, firebase (required at least one)
 
 For instance:
 

@@ -7,6 +7,14 @@
       "companyUrl": "http://example.com",
       "productUrls": ["http://example.com","http://example.com"],
       "technologies": ["angular","ionic", "nestjs", "ngrx"]
+    },
+    {
+      "name": "ActiMotive",
+      "description": "Experience the Fitware Revolution",
+      "logo": "http://www.acti-motive.com/uploads/4/1/5/5/4155369/slide19_orig.jpg",
+      "companyUrl": "http://www.acti-motive.com/",
+      "productUrls": ["http://www.acti-motive.com/product.html"],
+      "technologies": ["angular","electron", "firebase"]
     }
   ]
 }
