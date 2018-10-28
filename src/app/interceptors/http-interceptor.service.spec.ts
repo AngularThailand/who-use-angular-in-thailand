@@ -9,4 +9,5 @@ describe('HttpInterceptorService', () => {
     const service: HttpInterceptorService = TestBed.get(HttpInterceptorService);
     expect(service).toBeTruthy();
   });
+  // TODO: Write integration test with CompanyService
 });
