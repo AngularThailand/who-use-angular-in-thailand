@@ -1,10 +1,19 @@
 # Angular Quiz
 The Angular assessment's results
 
-[![Build Status](https://travis-ci.org/perjerz3434/who-use-angular-in-thailand.svg?branch=master)](https://travis-ci.org/perjerz3434/who-use-angular-in-thailand)(https://travis-ci.org/perjerz3434/who-use-angular-in-thailand)
+[![Build Status](https://travis-ci.org/perjerz3434/who-use-angular-in-thailand.svg?branch=master)]
+(https://travis-ci.org/perjerz3434/who-use-angular-in-thailand)
 
 https://angular-quiz-33472.firebaseapp.com/
 
 ## Add your company
-In order to add your score to the website, you have to do the assessment via https://app.pluralsight.com/score/skill-assessment/angular,
-and share your result to Twitter with tag @AngularThailand and hashtag #AngularThailand. @AngularThailand twitter account will like your tweet, and the result will be shown in the website. If @AngularThailand does not like your tweet, please direct message to this account.
+In order to add your score to the website, follow below steps 
+
+1. you have to do the assessment via https://app.pluralsight.com/score/skill-assessment/angular
+
+2. Share your result to Twitter with tag @AngularThailand and hashtag #AngularThailand. 
+You could
+
+3. @AngularThailand twitter account will like your tweet, and the result will be shown in the website. 
+
+4. If @AngularThailand does not like your tweet, please direct message to @AngularThailand Twitter account.
