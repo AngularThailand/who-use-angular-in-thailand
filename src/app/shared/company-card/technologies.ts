@@ -11,5 +11,6 @@ export const Technologies = {
   ngrx: 'ngrx',
   nativescript: 'nativescript',
   electron: 'electron',
-  electronjs: 'electron'
+  electronjs: 'electron',
+  firebase: 'firebase'
 };
