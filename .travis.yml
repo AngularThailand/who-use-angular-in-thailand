@@ -7,7 +7,9 @@ branches:
     - master
 addons:
   chrome: stable
-cache: npm
+cache:
+  directories:
+    - ./node_modules
 install:
   - npm i -g npm@latest
   - npm install -g @angular/cli@latest
