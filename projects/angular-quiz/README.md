@@ -15,3 +15,5 @@ In order to add your score to the website, follow below steps.
 3. @AngularThailand twitter account will like your tweet, and the result will be shown in the website. 
 
 4. If @AngularThailand does not like your tweet, please direct message to @AngularThailand Twitter account.
+
+5. Follow @Angular Thailand Twitter Account
