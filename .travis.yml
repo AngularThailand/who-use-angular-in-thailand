@@ -2,7 +2,6 @@ languaes: node_js
 node_js:
   - "10"
 dist: trusty
-sudo: required
 branches:
   only:
     - master
