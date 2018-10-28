@@ -4,7 +4,7 @@ node_js:
 dist: trusty
 branches:
   only:
-    - master
+    - master    - /^greenkeeper/.*$/
 addons:
   chrome: stable
 cache:
