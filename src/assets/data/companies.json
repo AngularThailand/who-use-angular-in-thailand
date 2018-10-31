@@ -21,7 +21,7 @@
       "description": "IT company",
       "logo": "https://www.itone.co.th/images/logo.png",
       "companyUrl": "https://www.itone.co.th",
-      "productUrls": ["-"],
+      "productUrls": [],
       "technologies": ["Angular", "Java"]
     }
   ]
