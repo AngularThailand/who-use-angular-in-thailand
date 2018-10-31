@@ -12,5 +12,6 @@ export const Technologies = {
   nativescript: 'nativescript',
   electron: 'electron',
   electronjs: 'electron',
-  firebase: 'firebase'
+  firebase: 'firebase',
+  tensorflow: 'tensorflow'
 };
