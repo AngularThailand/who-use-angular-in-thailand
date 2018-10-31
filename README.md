@@ -1,9 +1,9 @@
 # Who use Angular in Thailand
 The list of companies who use Angular in Thailand
 
-[![CircleCI](https://circleci.com/gh/perjerz3434/who-use-angular-in-thailand/tree/master.svg?style=svg)](https://circleci.com/gh/perjerz3434/who-use-angular-in-thailand/tree/master)
+[![CircleCI](https://circleci.com/gh/AngularThailand/who-use-angular-in-thailand/tree/master.svg?style=svg)](https://circleci.com/gh/AngularThailand/who-use-angular-in-thailand/tree/master)
 
-https://perjerz3434.github.io/who-use-angular-in-thailand
+https://AngularThailand.github.io/who-use-angular-in-thailand
 
 ## Add your company
 In order to add a company to this repo, you have to submit pull request so as to edit the src/assets/data/companies.json file.

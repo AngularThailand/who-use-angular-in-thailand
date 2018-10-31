@@ -1,7 +1,7 @@
 # Angular Quiz
 The Angular assessment's results
 
-[![Build Status](https://travis-ci.org/perjerz3434/who-use-angular-in-thailand.svg?branch=master)](https://travis-ci.org/perjerz3434/who-use-angular-in-thailand)
+[![Build Status](https://travis-ci.org/AngularThailand/who-use-angular-in-thailand.svg?branch=master)](https://travis-ci.org/AngularThailand/who-use-angular-in-thailand)
 
 https://angular-quiz-33472.firebaseapp.com/
 
