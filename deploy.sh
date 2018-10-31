@@ -15,5 +15,5 @@ if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
 
   git add -A
   git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
-  git push origin $TARGET_BRANCH
+  git push origin $TARGET_BRANCH > /dev/null 2>&1
 fi

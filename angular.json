@@ -67,7 +67,14 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "serviceWorker": true
+              "serviceWorker": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "700kb",
+                  "maximumError": "1mb"
+                }
+              ]
             }
           }
         },
@@ -129,6 +136,149 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-th": {
+      "root": "projects/angular-th",
+      "sourceRoot": "projects/angular-th/src",
+      "projectType": "library",
+      "prefix": "angular-th",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-th/tsconfig.lib.json",
+            "project": "projects/angular-th/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-th/tsconfig.lib.json",
+              "projects/angular-th/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-quiz": {
+      "root": "projects/angular-quiz/",
+      "sourceRoot": "projects/angular-quiz/src",
+      "projectType": "application",
+      "prefix": "angular-quiz",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-quiz",
+            "index": "projects/angular-quiz/src/index.html",
+            "main": "projects/angular-quiz/src/main.ts",
+            "polyfills": "projects/angular-quiz/src/polyfills.ts",
+            "tsConfig": "projects/angular-quiz/tsconfig.app.json",
+            "assets": [
+              "projects/angular-quiz/src/favicon.ico",
+              "projects/angular-quiz/src/assets"
+            ],
+            "styles": [
+              "projects/angular-quiz/src/styles.scss"
+            ],
+            "scripts": [
+              "projects/angular-quiz/src/assets/js/twitterFetcher.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-quiz/src/environments/environment.ts",
+                  "with": "projects/angular-quiz/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-quiz:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-quiz:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-quiz:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-quiz/tsconfig.app.json",
+              "projects/angular-quiz/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-quiz-e2e": {
+      "root": "projects/angular-quiz-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/angular-quiz-e2e/protractor.conf.js",
+            "devServerTarget": "angular-quiz:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-quiz:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/angular-quiz-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]

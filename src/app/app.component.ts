@@ -1,7 +1,7 @@
 import { CompanyService } from './services/company.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Company } from './company.model';
+import { Company } from './model/company.model';
 import { finalize } from 'rxjs/operators';
 
 @Component({

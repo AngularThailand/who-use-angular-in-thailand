@@ -9,7 +9,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getHeaderText()).toContain('Who use Angular(JS) in Thailand');
+    expect(page.getHeaderText()).toContain('Who use Angular in Thailand');
   });
   it('should contain at least one company title', () => {
     page.navigateTo();

@@ -1,5 +1,5 @@
 import { map, shareReplay } from 'rxjs/operators';
-import { Company } from './../company.model';
+import { Company } from './../model/company.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

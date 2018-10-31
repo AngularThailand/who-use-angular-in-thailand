@@ -1,0 +1,11 @@
+<ng-container *ngIf="loaded; else loadingSpinner">
+  <div fxLayout="row wrap" fxLayoutAlign.xs="start stretch" fxLayout.xs="column" class="container">
+    <angular-quiz-quiz-card fxFlex.xs="100%" fxFlex.sm="0 1 calc(50% - 16px)" fxFlex.md="0 1 calc(33.3% - 16px)"
+    fxFlex.lg="0 1 calc(25% - 16px)" fxFlex.xl="0 1 calc(20% - 16px)" *ngFor="let quiz of quizzes" [quizCard]="quiz"></angular-quiz-quiz-card>
+  </div>
+</ng-container>
+<ng-template #loadingSpinner>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+  </div>
+</ng-template>
