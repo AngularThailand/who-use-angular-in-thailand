@@ -5,7 +5,9 @@
       <a [href]="url" target="_blank" rel="noopener">{{url}}</a>
     </mat-card-subtitle>
   </mat-card-header>
-  <img *ngIf="company.logo as logo" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
+  <div fxLayoutAlign="center center" style="height: 200px">
+    <img *ngIf="company.logo as logo" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
+  </div>
   <mat-card-content>
     <p class="description">{{company.description}}</p>
   </mat-card-content>
@@ -21,7 +23,9 @@
     <div fxLayout="row wrap" fxLayoutAlign="start">
       <ng-container *ngFor="let tech of company.technologies">
         <img *ngIf="tech | techToIcon as icon; else techText" class="tech-logo" [src]="icon" [alt]="tech"/>
-        <ng-template #techText>{{tech}}</ng-template>
+        <ng-template #techText>
+          <span fxFlexAlign="center">{{tech}}</span>
+        </ng-template>
       </ng-container>
     </div>
   </mat-card-footer>

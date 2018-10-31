@@ -1,10 +1,15 @@
 :host {
   .company-logo {
-    width: 100px;
+    width: 200px;
   }
   .tech-logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
     width: 50px;
     height: 50px;
+    margin-left: 16px;
+  }
+  div[fxlayout="row wrap"] > * {
     margin-left: 16px;
   }
   .description {
@@ -13,4 +18,5 @@
   mat-card-footer > div {
     margin-bottom: 16px;
   }
+
 }
