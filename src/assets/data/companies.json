@@ -15,6 +15,14 @@
       "companyUrl": "http://www.acti-motive.com",
       "productUrls": ["http://www.acti-motive.com/product.html"],
       "technologies": ["angular","electron", "firebase"]
+    },
+    {
+      "name": "IT One",
+      "description": "IT company",
+      "logo": "https://www.itone.co.th/images/logo.png",
+      "companyUrl": "https://www.itone.co.th",
+      "productUrls": [],
+      "technologies": ["Angular", "Java"]
     }
   ]
 }
