@@ -1,12 +1,12 @@
 {
   "companies": [
     {
-      "name": "Example Company",
-      "description": "Example Company Description",
-      "logo": "assets/images/angular.svg",
-      "companyUrl": "http://example.com",
-      "productUrls": ["http://example.com","http://example.com"],
-      "technologies": ["angular","ionic", "nestjs", "ngrx"]
+      "name": "Humanize Co.,Ltd.",
+      "description": "Better Life by Simplified Innovation for Human",
+      "logo": "https://nize.ai/image/new-logo2.png",
+      "companyUrl": "https://humanize.co.th",
+      "productUrls": ["https://nize.ai/nize-digitalthailand.html"],
+      "technologies": ["angular", "nestjs", "ngrx", "firebase", "tensorflow", "python"]
     },
     {
       "name": "ActiMotive",

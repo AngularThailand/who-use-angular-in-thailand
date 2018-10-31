@@ -15,7 +15,7 @@ JSON object must follow the format below.
 - logo: Company logo's URL (optional)
 - companyUrl: Company's URL (required) (with http/https)
 - productUrls: Company products's URL using Angular ecosystem (optional) (with http/https)
-- technologies: Technologies to build your product related to Angular: rxjs, angular, angularjs, typescript, ionic, nest, ngrx, nativescript, electron, firebase (required at least one)
+- technologies: Technologies to build your product related to Angular: rxjs, angular, angularjs, typescript, ionic, nest, ngrx, nativescript, electron, firebase, tensorflow (required at least one)
 
 For instance:
 
