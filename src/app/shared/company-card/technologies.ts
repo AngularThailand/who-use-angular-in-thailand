@@ -13,5 +13,7 @@ export const Technologies = {
   electron: 'electron',
   electronjs: 'electron',
   firebase: 'firebase',
-  tensorflow: 'tensorflow'
+  tensorflow: 'tensorflow',
+  java: 'java',
+  python: 'python'
 };
