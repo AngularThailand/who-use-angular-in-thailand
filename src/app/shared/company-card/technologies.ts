@@ -15,5 +15,8 @@ export const Technologies = {
   firebase: 'firebase',
   tensorflow: 'tensorflow',
   java: 'java',
-  python: 'python'
+  python: 'python',
+  gcp: 'gcp',
+  android: 'android',
+  ios: 'ios'
 };
