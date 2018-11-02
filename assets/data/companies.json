@@ -22,7 +22,15 @@
       "logo": "https://www.itone.co.th/images/logo.png",
       "companyUrl": "https://www.itone.co.th",
       "productUrls": [],
-      "technologies": ["Angular", "Java"]
+      "technologies": ["angular", "java"]
+    },
+    {
+      "name": "CalCal",
+      "description": "Lifestyle Calorie Management",
+      "logo": "https://www.cal-cal.com/wp-content/uploads/2017/12/14@4x.png",
+      "companyUrl": "https://www.cal-cal.com",
+      "productUrls": [],
+      "technologies": ["angular","firebase","gcp","android","ios"]
     }
   ]
 }
