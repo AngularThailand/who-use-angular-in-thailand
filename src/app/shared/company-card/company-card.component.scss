@@ -15,8 +15,10 @@
   .description {
     word-break: break-word;
   }
+  mat-card-content {
+    margin-top: 16px;
+  }
   mat-card-footer > div {
     margin-bottom: 16px;
   }
-
 }
