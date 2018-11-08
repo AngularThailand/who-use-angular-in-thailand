@@ -5,7 +5,7 @@ The Angular assessment's results
 
 https://angular-quiz-33472.firebaseapp.com/
 
-## Add your company
+## Add your score
 In order to add your score to the website, follow below steps.
 
 1. You have to do the assessment via https://app.pluralsight.com/score/skill-assessment/angular
