@@ -11,10 +11,10 @@
     {
       "name": "ActiMotive",
       "description": "Experience the Fitware Revolution",
-      "logo": "https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/12107943_925404604203734_3363265687075785961_n.jpg?_nc_cat=109&_nc_ht=scontent.fbkk7-2.fna&oh=4d92f7b4d1a75f1503429e093b7db143&oe=5C516440",
+      "logo": "https://actimotive.app/assets/icons/icon-512x512.png",
       "companyUrl": "http://www.acti-motive.com",
       "productUrls": ["http://www.acti-motive.com/product.html","https://actimotive.app"],
-      "technologies": ["angular","electron", "firebase"]
+      "technologies": ["angular","electron", "firebase", "nodejs", "pwa", "rxjs", "scss", "typescript", "webrtc"]
     },
     {
       "name": "IT One",
