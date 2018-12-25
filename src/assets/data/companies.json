@@ -39,6 +39,6 @@
       "companyUrl": "http://www.youngcyber.co.th",
       "productUrls": ["https://www.jisaims.com/","http://www.halaltourismthailand.com/mobile","http://pufree.tech/","https://halq.app/"],
       "technologies": ["angularjs","angular","ionic","firebase","ios","android"]
-}
+     }
   ]
 }
