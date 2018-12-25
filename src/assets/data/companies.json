@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "incen Co.,Ltd.",
+      "description": "Lifestyle Calorie Management",
+      "logo": "",
+      "companyUrl": "https://www.hostxdesign.com",
+      "productUrls": [],
+      "technologies": ["angular","firebase","nodejd"]
     }
   ]
 }
