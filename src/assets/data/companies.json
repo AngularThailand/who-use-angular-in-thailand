@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "ASC",
+      "description": "Advanced Systems Consulting",
+      "logo": "http://www.grpasc.com/addons/shared_addons/themes/asc/img/LogoASC.png",
+      "companyUrl": "http://www.grpasc.com/",
+      "productUrls": [],
+      "technologies": ["angular","java","neo4j"]
     }
   ]
 }
