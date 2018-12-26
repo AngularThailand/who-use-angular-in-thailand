@@ -46,7 +46,7 @@
       "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
       "logo": "http://ipassion.co.th/images/logo.png",
       "companyUrl": "http://ipassion.co.th/",
-      "productUrls": ["rdserver.rd.go.th"],
+      "productUrls": ["rdserver.rd.go.th"],  
       "technologies": ["angular"]
     }]
 }
