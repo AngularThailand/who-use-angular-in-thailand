@@ -1,6 +1,5 @@
 {
-  "companies": [
-    {
+  "companies": [{
       "name": "Humanize Co.,Ltd.",
       "description": "Better Life by Simplified Innovation for Human",
       "logo": "https://nize.ai/image/new-logo2.png",
@@ -13,8 +12,8 @@
       "description": "Experience the Fitware Revolution",
       "logo": "https://actimotive.app/assets/icons/icon-512x512.png",
       "companyUrl": "http://www.acti-motive.com",
-      "productUrls": ["http://www.acti-motive.com/product.html","https://actimotive.app"],
-      "technologies": ["angular","electron", "firebase", "nodejs", "pwa", "rxjs", "scss", "typescript", "webrtc"]
+      "productUrls": ["http://www.acti-motive.com/product.html", "https://actimotive.app"],
+      "technologies": ["angular", "electron", "firebase", "nodejs", "pwa", "rxjs", "scss", "typescript", "webrtc"]
     },
     {
       "name": "IT One",
@@ -30,7 +29,15 @@
       "logo": "https://www.cal-cal.com/wp-content/uploads/2017/12/14@4x.png",
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
-      "technologies": ["angular","firebase","gcp","android","ios"]
+      "technologies": ["angular", "firebase", "gcp", "android", "ios"]
+    },
+    {
+      "name": "Allianz Technology",
+      "description": "Angular UI Library Base on Pattern LAB (Allianz StyleGuide)",
+      "logo": "https://www.allianz.com/content/dam/onemarketing/system/allianz-logo.svg",
+      "companyUrl": "https://www.allianz.com/en.html",
+      "productUrls": ["https://api-test.allianz.com/ngx-ndbx-dev/"],
+      "technologies": ["angular", "scss", "typescript"]
     }
   ]
 }
