@@ -34,7 +34,7 @@
     {
       "name": "Vertice international ",
       "description": "Take advantage of the human resources of Asian countries aimed IT",
-      "logo": "",
+      "logo": "http://www.vertice-international.com/assets/images/vertice.png",
       "companyUrl": "http://www.vertice-international.com/company",
       "productUrls": ["https://kurumajiten.jp/login"],
       "technologies": ["angular", "rxjs", "ngrx", "scss", "typescript"]
