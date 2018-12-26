@@ -34,7 +34,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install --frozen-lockfile
+      - run: npm run ci
 
       - save_cache:
           paths:
@@ -42,26 +42,26 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run lint!
-      - run: yarn lint:lib
-      - run: yarn lint:app:who
+      - run: npm run lint:lib
+      - run: npm run lint:app:who
 
       # run lib unit tests!
-      - run: yarn test:lib
+      - run: npm run test:lib
 
       # run build lib!
-      - run: yarn build:lib
+      - run: npm run build:lib
 
       # run app unit tests!
-      - run: yarn test:app:who
+      - run: npm run test:app:who
 
       # run e2e!
-      - run: yarn e2e:app:who
+      - run: npm run e2e:app:who
 
       # run cypress!
-      # - run: yarn cypress:run
+      # - run: npm run cypress:run
 
       # run build
-      - run: yarn build:gh
+      - run: npm run build:gh
 
       # deploy to GH page
       - deploy:
