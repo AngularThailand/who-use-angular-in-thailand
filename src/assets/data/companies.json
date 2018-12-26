@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "iPassion Co., Ltd",
+      "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
+      "logo": "http://ipassion.co.th/images/logo.png",
+      "companyUrl": "http://ipassion.co.th/",
+      "productUrls": ["https://blockchain-a.firebaseapp.com/"],
+      "technologies": ["angularjs", "angular","ionic", "nestjs", "ngrx"]
     }
   ]
 }
