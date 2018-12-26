@@ -8,13 +8,13 @@ branches:
     - master
 addons:
   chrome: stable
-cache:
-  directories:
-    - ./node_modules
+# cache:
+#   directories:
+    # - ./node_modules
 install:
   - npm i -g npm@latest
   - npm install -g @angular/cli@latest
-  - npm ci
+  - npm i
 script:
 - npm run lint:lib
 - npm run lint:app:quiz
