@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "Indistinct",
+      "description": "New Software House",
+      "logo": "",
+      "companyUrl": "",
+      "productUrls": ["webgame"],
+      "technologies": ["angular","firebase","gcp","android","ios","ionic","hybrid"]
     }
   ]
 }
