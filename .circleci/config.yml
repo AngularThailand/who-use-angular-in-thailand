@@ -34,7 +34,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm ci
+      - run: npm run ci
 
       - save_cache:
           paths:
@@ -42,26 +42,26 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run lint!
-      - run: npm lint:lib
-      - run: npm lint:app:who
+      - run: npm run lint:lib
+      - run: npm run lint:app:who
 
       # run lib unit tests!
-      - run: npm test:lib
+      - run: npm run test:lib
 
       # run build lib!
-      - run: npm build:lib
+      - run: npm run build:lib
 
       # run app unit tests!
-      - run: npm test:app:who
+      - run: npm run test:app:who
 
       # run e2e!
-      - run: npm e2e:app:who
+      - run: npm run e2e:app:who
 
       # run cypress!
-      # - run: npm cypress:run
+      # - run: npm run cypress:run
 
       # run build
-      - run: npm build:gh
+      - run: npm run build:gh
 
       # deploy to GH page
       - deploy:
