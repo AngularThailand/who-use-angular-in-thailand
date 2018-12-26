@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "BUILK ONE GROUP",
+      "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
+      "logo": "https://www.builk.one/wp-content/uploads/2017/09/LOGO.png",
+      "companyUrl": "https://www.builk.one/",
+      "productUrls": ["https://www.builk.com/en/"],
+      "technologies": ["angular", "scss", "rxjs"]
     }
   ]
 }
