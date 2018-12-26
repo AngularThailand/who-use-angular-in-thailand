@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "Krungsri Auto",
+      "description": "Krungsri Auto",
+      "logo": "https://www.krungsriauto.com/auto/Image/krungsri-logo.html",
+      "companyUrl": "https://www.krungsriauto.com",
+      "productUrls": [],
+      "technologies": ["angularjs","localstorage","android","ios"]
     }
   ]
 }
