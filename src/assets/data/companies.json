@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "Infinite",
+      "description": "Softwere and consult business solutions",
+      "logo": "https://infinite-staff.com/wp-content/uploads/2017/07/Infinite-staffing-logo-1.png",
+      "companyUrl": "https://infinite-staff.com",
+      "productUrls": [""],
+      "technologies": ["angular","nodejs","tyscript","scss"]
     }
   ]
 }
