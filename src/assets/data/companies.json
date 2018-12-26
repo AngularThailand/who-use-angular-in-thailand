@@ -37,8 +37,8 @@
       "description": "Parner for your success",
       "logo": "https://aspiron.co.th/images/main-logo.png",
       "companyUrl": "https://aspiron.co.th",
-      "productUrls": ["https://iinsure.kpi.co.th/"],
-      "technologies": ["angularjs","java","oracle"]
+      "productUrls": [],
+      "technologies": ["angular","java","oracle"]
     }
   ]
 }
