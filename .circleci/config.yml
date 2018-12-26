@@ -54,6 +54,9 @@ jobs:
       # run app unit tests!
       - run: npm run test:app:who
 
+      # fix chrome driver version
+      - run: npm run webdriver-update-ci
+
       # run e2e!
       - run: npm run e2e:app:who
 
