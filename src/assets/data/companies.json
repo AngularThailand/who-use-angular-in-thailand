@@ -35,10 +35,10 @@
     {
       "name": "InterSet Research and Solution",
       "description": "IT company",
-      "logo": "",
+      "logo": "https://interset.co.th/wp-content/uploads/2018/05/logo-ver2-02.png",
       "companyUrl": "https://interset.co.th/",
-      "productUrls": [],
-      "technologies": ["angular", "asp.net"]
+      "productUrls": ["https://interset.co.th/en/products-services/"],
+      "technologies": ["angularjs", "typescript", "asp.net"]
     }
   ]
 }
