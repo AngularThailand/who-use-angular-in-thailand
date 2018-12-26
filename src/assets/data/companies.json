@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "K.Stone Corporation Ltd.",
+      "description": "K.Stone Corporation Ltd. offer world class recruitment and outsourcing services to promote your success",
+      "logo": "http://www.kstonecorp.co.th/images/logo_k.gif",
+      "companyUrl": "http://www.kstonecorp.co.th/",
+      "productUrls": [],
+      "technologies": ["angular","firebase","nodejs","typescript"]
     }
   ]
 }
