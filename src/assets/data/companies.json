@@ -31,6 +31,14 @@
       "companyUrl": "https://www.cal-cal.com",
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
+    },
+    {
+      "name": "Aspiron Co.,Ltd.",
+      "description": "Parner for your success",
+      "logo": "https://aspiron.co.th/images/main-logo.png",
+      "companyUrl": "https://aspiron.co.th",
+      "productUrls": ["https://iinsure.kpi.co.th/"],
+      "technologies": ["angularjs","java","oracle"]
     }
   ]
 }
