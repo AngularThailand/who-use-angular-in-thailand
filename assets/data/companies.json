@@ -29,7 +29,7 @@
       "description": "Lifestyle Calorie Management",
       "logo": "https://www.cal-cal.com/wp-content/uploads/2017/12/14@4x.png",
       "companyUrl": "https://www.cal-cal.com",
-      "productUrls": [],
+      "productUrls": ["https://calcal-store-dev.firebaseapp.com"],
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
@@ -151,7 +151,7 @@
       "companyUrl": "http://ipassion.co.th/",
       "productUrls": ["https://blockchain-a.firebaseapp.com/", "http://rdserver.rd.go.th"],
       "technologies": ["angularjs", "angular","ionic", "nestjs", "ngrx"]
-    },    
+    },
     {
       "name": "ScoutOut",
       "description": "Recruitment Software for Southeast Asia Workforce",
