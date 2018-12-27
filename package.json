@@ -32,9 +32,10 @@
     "ng-packagr:angular-th": "ng-packagr -p projects/angular-th/package.json",
     "ci": "npm run ci:lib",
     "ci:lib": "npm run lint:lib && npm run test:lib && npm run build:lib && npm run ci:app",
-    "ci:app": "npm-run-all --parallel --race ci:who ci:quiz && npm run e2e:app:who && npm run e2e:app:quiz",
+    "ci:app": "npm-run-all --parallel --race ci:who ci:quiz && npm run webdriver-update-ci && npm run e2e:app:who && npm run e2e:app:quiz",
     "ci:who": "npm run lint:app:who && npm run test:app:who",
-    "ci:quiz": "npm run lint:app:quiz && npm run test:app:quiz"
+    "ci:quiz": "npm run lint:app:quiz && npm run test:app:quiz",
+    "webdriver-update-ci": "webdriver-manager update --standalone false --gecko false --versions.chrome 2.37"
   },
   "private": false,
   "dependencies": {
@@ -43,7 +44,7 @@
     "@angular/common": "^7.1.4",
     "@angular/compiler": "^7.1.4",
     "@angular/core": "^7.1.4",
-    "@angular/flex-layout": "^7.0.0-beta.22",
+    "@angular/flex-layout": "^7.0.0-beta.19",
     "@angular/forms": "^7.1.4",
     "@angular/http": "^7.1.4",
     "@angular/material": "^7.2.0",
