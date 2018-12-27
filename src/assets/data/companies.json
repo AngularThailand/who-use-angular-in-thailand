@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "Quo Bangkok",
+      "description": "Quo Bangkok",
+      "logo": "",
+      "companyUrl": "https://www.quo-global.com/",
+      "productUrls": [],
+      "technologies": ["angular"]
+    },
+    {
       "name": "Krungsri Auto",
       "description": "Krungsri Auto",
       "logo": "https://www.krungsriauto.com/auto/Image/krungsri-logo.html",
