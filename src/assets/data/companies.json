@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "BUILK ONE GROUP",
+      "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
+      "logo": "https://www.builk.one/wp-content/uploads/2017/09/LOGO.png",
+      "companyUrl": "https://www.builk.one/",
+      "productUrls": ["https://www.builk.com/en/"],
+      "technologies": ["angular", "scss", "rxjs"]
+    },
+    {
       "name": "ODDS Team",
       "description": "We believe that, software development should be fun",
       "logo": "https://uc73f1b3f9723cb0f1702bc87867.previews.dropboxusercontent.com/p/thumb/AARFuEdhbZPEIS0A4JOM7A9l7x6kmuAgmXR_XPVPuM40q6U-FxnOoTSOzS_Vb-5p-X6G7PSYHAUURwMMcp0Wq27xRG4aR9RtwAkOkWqvNtEvotIgcogEy0UGBUy7XgI868RYE1euQ1tgC-m858elzzb7Ks4cyhhWuYw23j8wcpH3nODPPiJBqT46qrDklvl4H9c9xMNO0pmrrT47YM_Pr6uuwUk8yNog7aJkfebEMM4gazLQ8q3XKiWifkV1FbH1rv-44mMbgXL_2LL4DaKzM3S6/p.png?size=1024x768&size_mode=3",
