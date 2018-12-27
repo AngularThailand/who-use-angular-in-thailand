@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "Exzy",
+      "description": "Our Service, We help brands reach their audiences, throught remarkable experience.",
+      "logo": "https://exzymeeting.exzycloud.com/config/images/login-logo.png",
+      "companyUrl": "http://www.exzy.me/",
+      "productUrls": ["https://exzymeeting.exzycloud.com", "https://www.meetintouch.com"],
+      "technologies": ["angularjs", "angular", "ngrx", "jasmine-marbles", "cordova", "typescript", "scss"]
+    },
+    {
       "name": "BUILK ONE GROUP",
       "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
       "logo": "https://www.builk.one/wp-content/uploads/2017/09/LOGO.png",
