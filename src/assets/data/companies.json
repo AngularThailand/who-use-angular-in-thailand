@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "ASC",
+      "description": "Advanced Systems Consulting",
+      "logo": "http://www.grpasc.com/addons/shared_addons/themes/asc/img/LogoASC.png",
+      "companyUrl": "http://www.grpasc.com/",
+      "productUrls": [],
+      "technologies": ["angular","java","neo4j"]
+    },
+    {
       "name": "Youngcyber Digital Technology",
       "description": "Develop Platform , Training , Consulte About Digital technology ",
       "logo": "http://www.youngcyber.co.th/piclogo/1439270150.png",
