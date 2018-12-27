@@ -21,7 +21,8 @@ script:
 - npm run test:lib
 - npm run build:lib
 - npm run test:app:quiz
-- npm run e2e:app:quiz
+- npm run webdriver-update-ci
+- npm run e2e:app:quiz -- --webdriver-update=false
 - npm run build:app:quiz
 deploy:
   skip_cleanup: true
