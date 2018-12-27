@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "Indistinct",
+      "description": "New Software House",
+      "logo": "",
+      "companyUrl": "",
+      "productUrls": ["webgame"],
+      "technologies": ["angular","firebase","gcp","android","ios","ionic","hybrid"]
+    },
+    {
       "name": "Quo Bangkok",
       "description": "Quo Bangkok",
       "logo": "",
