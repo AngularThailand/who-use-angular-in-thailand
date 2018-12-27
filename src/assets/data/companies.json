@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "K.Stone Corporation Ltd.",
+      "description": "K.Stone Corporation Ltd. offer world class recruitment and outsourcing services to promote your success",
+      "logo": "http://www.kstonecorp.co.th/images/logo_k.gif",
+      "companyUrl": "http://www.kstonecorp.co.th/",
+      "productUrls": [],
+      "technologies": ["angular","firebase","nodejs","typescript"]
+    },
+    {
       "name": "Exzy",
       "description": "Our Service, We help brands reach their audiences, throught remarkable experience.",
       "logo": "https://exzymeeting.exzycloud.com/config/images/login-logo.png",
