@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "Allianz Technology",
+      "description": "Angular UI Library Base on Pattern LAB (Allianz StyleGuide)",
+      "logo": "https://www.allianz.com/content/dam/onemarketing/system/allianz-logo.svg",
+      "companyUrl": "https://www.allianz.com/en.html",
+      "productUrls": ["https://api-test.allianz.com/ngx-ndbx-dev/"],
+      "technologies": ["angular", "scss", "typescript"]
+    },
+    {
       "name": "Vertice international ",
       "description": "Take advantage of the human resources of Asian countries aimed IT",
       "logo": "http://www.vertice-international.com/assets/images/vertice.png",
