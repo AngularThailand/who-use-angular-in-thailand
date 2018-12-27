@@ -34,7 +34,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm run ci
+      - run: npm ci
 
       - save_cache:
           paths:
@@ -54,8 +54,11 @@ jobs:
       # run app unit tests!
       - run: npm run test:app:who
 
+      # fix chrome driver version
+      - run: npm run webdriver-update-ci
+
       # run e2e!
-      - run: npm run e2e:app:who
+      - run: npm run e2e:app:who -- --webdriver-update=false
 
       # run cypress!
       # - run: npm run cypress:run

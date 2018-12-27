@@ -32,21 +32,22 @@
       "productUrls": [],
       "technologies": ["angular","firebase","gcp","android","ios"]
     
-  },
+    },
     {
       "name": "iPassion Co., Ltd",
       "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
       "logo": "http://ipassion.co.th/images/logo.png",
       "companyUrl": "http://ipassion.co.th/",
-      "productUrls": ["https://blockchain-a.firebaseapp.com/"],
+      "productUrls": ["https://blockchain-a.firebaseapp.com/", "http://rdserver.rd.go.th"],
       "technologies": ["angularjs", "angular","ionic", "nestjs", "ngrx"]
-    },
-        {
-      "name": "iPassion Co., Ltd",
-      "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
-      "logo": "http://ipassion.co.th/images/logo.png",
-      "companyUrl": "http://ipassion.co.th/",
-      "productUrls": ["rdserver.rd.go.th"],  
-      "technologies": ["angular"]
-    }]
+    },    
+    {
+      "name": "ScoutOut",
+      "description": "Recruitment Software for Southeast Asia Workforce",
+      "logo": "https://d2rpvgec3ea0r0.cloudfront.net/scoutout-logo@3x.png",
+      "companyUrl": "https://www.scoutout.net",
+      "productUrls": ["https://www.linejobs.me"],
+      "technologies": ["angular","firebase","gcp","java","python"]
+    }
+  ]
 }
