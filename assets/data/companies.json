@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "incen Co.,Ltd.",
+      "description": "Create innovation for society engineers",
+      "logo": "",
+      "companyUrl": "https://www.hostxdesign.com",
+      "productUrls": [],
+      "technologies": ["angular","firebase","nodejd"]
+    },
+    {
       "name": "Allianz Technology",
       "description": "Angular UI Library Base on Pattern LAB (Allianz StyleGuide)",
       "logo": "https://www.allianz.com/content/dam/onemarketing/system/allianz-logo.svg",
