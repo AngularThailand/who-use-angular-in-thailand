@@ -34,6 +34,14 @@
     
     },
     {
+      "name": "InterSet Research and Solution",
+      "description": "IT company",
+      "logo": "https://interset.co.th/wp-content/uploads/2018/05/logo-ver2-02.png",
+      "companyUrl": "https://interset.co.th/",
+      "productUrls": ["https://interset.co.th/en/products-services/"],
+      "technologies": ["angularjs", "typescript", "asp.net"]
+    },
+    {
       "name": "iPassion Co., Ltd",
       "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
       "logo": "http://ipassion.co.th/images/logo.png",
