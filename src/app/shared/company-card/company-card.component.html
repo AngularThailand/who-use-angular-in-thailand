@@ -5,7 +5,7 @@
       <a [href]="url" target="_blank" rel="noopener">{{url}}</a>
     </mat-card-subtitle>
   </mat-card-header>
-  <div fxLayoutAlign="center center" style="height: 200px">
+  <div fxLayoutAlign="center center" style="height: 300px">
     <img *ngIf="company.logo as logo" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
   </div>
   <mat-card-content>
@@ -15,7 +15,7 @@
     <div fxLayout="column" fxLayoutAlign="start">
       <b>Product:</b>
       <ng-container *ngFor="let url of company.productUrls">
-        <a [href]="url" target="_blank" rel="noopener">{{url}}</a>
+        <a style="width: 300px; overflow-x: hidden" [href]="url" target="_blank" rel="noopener">{{url}}</a>
       </ng-container>
     </div>
   </mat-card-content>
