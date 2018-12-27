@@ -33,6 +33,14 @@
       "technologies": ["angular","firebase","gcp","android","ios"]
     },
     {
+      "name": "Vertice international ",
+      "description": "Take advantage of the human resources of Asian countries aimed IT",
+      "logo": "http://www.vertice-international.com/assets/images/vertice.png",
+      "companyUrl": "http://www.vertice-international.com/company",
+      "productUrls": ["https://kurumajiten.jp/login"],
+      "technologies": ["angular", "rxjs", "ngrx", "scss", "typescript"]
+    },
+    {
       "name": "Infinite",
       "description": "Softwere and consult business solutions",
       "logo": "https://infinite-staff.com/wp-content/uploads/2017/07/Infinite-staffing-logo-1.png",
