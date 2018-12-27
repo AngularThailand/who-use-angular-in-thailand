@@ -39,6 +39,62 @@
       "companyUrl": "https://www.builk.one/",
       "productUrls": ["https://www.builk.com/en/"],
       "technologies": ["angular", "scss", "rxjs"]
+    },
+    {
+      "name": "ODDS Team",
+      "description": "We believe that, software development should be fun",
+      "logo": "https://uc73f1b3f9723cb0f1702bc87867.previews.dropboxusercontent.com/p/thumb/AARFuEdhbZPEIS0A4JOM7A9l7x6kmuAgmXR_XPVPuM40q6U-FxnOoTSOzS_Vb-5p-X6G7PSYHAUURwMMcp0Wq27xRG4aR9RtwAkOkWqvNtEvotIgcogEy0UGBUy7XgI868RYE1euQ1tgC-m858elzzb7Ks4cyhhWuYw23j8wcpH3nODPPiJBqT46qrDklvl4H9c9xMNO0pmrrT47YM_Pr6uuwUk8yNog7aJkfebEMM4gazLQ8q3XKiWifkV1FbH1rv-44mMbgXL_2LL4DaKzM3S6/p.png?size=1024x768&size_mode=3",
+      "companyUrl": "https://web.facebook.com/oddsteam/",
+      "productUrls": [],
+      "technologies": ["angular","web","go","android","ios"]
+    },
+    {
+      "name": "Indistinct",
+      "description": "New Software House",
+      "logo": "",
+      "companyUrl": "",
+      "productUrls": ["webgame"],
+      "technologies": ["angular","firebase","gcp","android","ios","ionic","hybrid"]
+    },
+    {
+      "name": "Quo Bangkok",
+      "description": "Quo Bangkok",
+      "logo": "",
+      "companyUrl": "https://www.quo-global.com/",
+      "productUrls": [],
+      "technologies": ["angular"]
+    },
+    {
+      "name": "Krungsri Auto",
+      "description": "Krungsri Auto",
+      "logo": "https://www.krungsriauto.com/auto/Image/krungsri-logo.html",
+      "companyUrl": "https://www.krungsriauto.com",
+      "productUrls": [],
+      "technologies": ["angularjs","localstorage","android","ios"]
+    },
+    {
+      "name": "InterSet Research and Solution",
+      "description": "IT company",
+      "logo": "https://interset.co.th/wp-content/uploads/2018/05/logo-ver2-02.png",
+      "companyUrl": "https://interset.co.th/",
+      "productUrls": ["https://interset.co.th/en/products-services/"],
+      "technologies": ["angularjs", "typescript", "asp.net"]
+    },
+    {
+      "name": "iPassion Co., Ltd",
+      "description": "Building Integrated Technology Solutions AcrossMobile, Web & Cloud For Global Startups Companies",
+      "logo": "http://ipassion.co.th/images/logo.png",
+      "companyUrl": "http://ipassion.co.th/",
+      "productUrls": ["https://blockchain-a.firebaseapp.com/", "http://rdserver.rd.go.th"],
+      "technologies": ["angularjs", "angular","ionic", "nestjs", "ngrx"]
+    },    
+    {
+      "name": "ScoutOut",
+      "description": "Recruitment Software for Southeast Asia Workforce",
+      "logo": "https://d2rpvgec3ea0r0.cloudfront.net/scoutout-logo@3x.png",
+      "companyUrl": "https://www.scoutout.net",
+      "productUrls": ["https://www.linejobs.me"],
+      "technologies": ["angular","firebase","gcp","java","python"]
     }
   ]
 }
