@@ -2,10 +2,13 @@ export const Technologies = {
   android: 'android',
   angular: 'angular',
   angularjs: 'angularjs',
+  cordova: 'cordova',
   electron: 'electron',
   electronjs: 'electron',
   firebase: 'firebase',
   gcp: 'gcp',
+  go: 'go',
+  golang: 'go',
   ionic: 'ionic',
   ios: 'ios',
   java: 'java',
@@ -15,6 +18,7 @@ export const Technologies = {
   // https://nodejs.org/en/about/resources/
   node: 'nodejs',
   nodejs: 'nodejs',
+  neo4j: 'neo4j',
   nativescript: 'nativescript',
   // https://github.com/webmaxru/progressive-web-apps-logo -> https://diekus.com/logo-pwinter/
   pwa: 'pwa',
