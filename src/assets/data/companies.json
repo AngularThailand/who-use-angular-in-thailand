@@ -163,7 +163,7 @@
     {
     "name": "Aspiron Co.,Ltd.",
     "description": "Parner for your success",
-    "logo": "https://aspiron.co.th/images/main-logo.png",
+    "logo": "assets/companies/aspiron.svg",
     "companyUrl": "https://aspiron.co.th",
     "productUrls": [],
     "technologies": ["angularjs","java"]
