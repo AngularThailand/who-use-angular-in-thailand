@@ -159,6 +159,14 @@
       "companyUrl": "https://www.scoutout.net",
       "productUrls": ["https://www.linejobs.me"],
       "technologies": ["angular","firebase","gcp","java","python"]
+    },
+    {
+    "name": "Aspiron Co.,Ltd.",
+    "description": "Parner for your success",
+    "logo": "assets/companies/aspiron.svg",
+    "companyUrl": "https://aspiron.co.th",
+    "productUrls": [],
+    "technologies": ["angularjs","java"]
     }
   ]
 }
