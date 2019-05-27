@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 import { TwitterSearchResponse, TwitterFetcher } from '../models/twitter.model';
 import { of, ReplaySubject, throwError } from 'rxjs';
 
+declare var twitterFetcher: any;
+
 @Injectable({
   providedIn: 'root',
 })
