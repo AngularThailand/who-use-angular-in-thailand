@@ -1,6 +1,9 @@
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatButtonModule, MatIconModule, MatProgressSpinnerModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { TechToIconPipe } from './company-card/tech-to-icon.pipe';
 import { CompanyCardComponent } from './company-card/company-card.component';
