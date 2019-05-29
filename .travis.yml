@@ -1,6 +1,6 @@
 languaes: node_js
 node_js:
-  - "10"
+  - "lts"
 dist: trusty
 sudo: false
 branches:
