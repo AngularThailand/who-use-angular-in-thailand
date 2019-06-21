@@ -12,8 +12,8 @@ addons:
 #   directories:
     # - ./node_modules
 install:
-  - nvm install lts
-  - nvm use lts
+  - nvm install 10
+  - nvm use 10
   - npm i -g npm@latest
   - npm install -g @angular/cli@latest
   - npm ci
