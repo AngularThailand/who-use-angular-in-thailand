@@ -1,9 +1,12 @@
-import { getGreeting } from '../support/app.po';
+import { getGreeting, getCards } from '../support/app.po';
 
 describe('angular-quiz', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
-    getGreeting().contains('Welcome to angular-quiz!');
+    getGreeting().should('contain', 'Angular Quiz');
+  });
+  it('should contain at least one tweet', () => {
+    getCards().should('exist');
   });
 });
