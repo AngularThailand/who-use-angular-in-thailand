@@ -27,7 +27,7 @@
     "cypress:ci": "cypress run --record --parallel",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "format": "prettier --write 'src/**/*.{ts.scss}'",
+    "format": "nx format:write",
     "analyze:quiz": "npm run build:quiz -- --stats-json && webpack-bundle-analyzer ./dist/angular-quiz/stats.json",
     "ng-packagr:angular-th": "ng-packagr -p projects/angular-th/package.json",
     "ci": "npm run ci:lib",
@@ -35,7 +35,23 @@
     "ci:app": "npm-run-all --parallel --race ci:who ci:quiz && npm run webdriver-update-ci && npm run e2e:app:who && npm run e2e:app:quiz",
     "ci:who": "npm run lint:app:who && npm run test:app:who",
     "ci:quiz": "npm run lint:app:quiz && npm run test:app:quiz",
-    "webdriver-update-ci": "webdriver-manager update --standalone false --gecko false --versions.chrome 2.37"
+    "webdriver-update-ci": "webdriver-manager update --standalone false --gecko false --versions.chrome 2.37",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected": "nx affected",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "ng update @nrwl/workspace",
+    "update:check": "ng update",
+    "lint": "nx lint && ng lint",
+    "dep-graph": "nx dep-graph",
+    "workspace-schematic": "nx workspace-schematic",
+    "help": "nx help"
   },
   "private": false,
   "dependencies": {
@@ -57,7 +73,8 @@
     "core-js": "^3.1.4",
     "jasmine": "^3.3.1",
     "rxjs": "~6.5.2",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@nrwl/angular": "8.1.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.800.3",
@@ -86,7 +103,8 @@
     "tslint": "~5.16.0",
     "typescript": "^3.4.5",
     "webpack": "^4.35.0",
-    "webpack-bundle-analyzer": "^3.0.3"
+    "webpack-bundle-analyzer": "^3.0.3",
+    "@nrwl/workspace": "8.1.2"
   },
   "husky": {
     "hooks": {
