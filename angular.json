@@ -166,7 +166,8 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/angular-th/jest.config.js",
-            "tsConfig": "libs/angular-th/tsconfig.spec.json"
+            "tsConfig": "libs/angular-th/tsconfig.spec.json",
+            "setupFile": "libs/angular-th/src/test-setup.ts"
           }
         }
       }
