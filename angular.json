@@ -27,9 +27,7 @@
               "apps/who-use-angular-in-thailand/src/assets",
               "apps/who-use-angular-in-thailand/src/manifest.json"
             ],
-            "styles": [
-              "apps/who-use-angular-in-thailand/src/styles.scss"
-            ],
+            "styles": ["apps/who-use-angular-in-thailand/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -106,9 +104,7 @@
             "polyfills": "apps/who-use-angular-in-thailand/src/polyfills.ts",
             "tsConfig": "apps/who-use-angular-in-thailand/tsconfig.spec.json",
             "karmaConfig": "apps/who-use-angular-in-thailand/karma.conf.js",
-            "styles": [
-              "apps/who-use-angular-in-thailand/src/styles.scss"
-            ],
+            "styles": ["apps/who-use-angular-in-thailand/src/styles.scss"],
             "scripts": [],
             "assets": [
               "apps/who-use-angular-in-thailand/src/favicon.ico",
@@ -123,9 +119,7 @@
               "apps/who-use-angular-in-thailand/tsconfig.app.json",
               "apps/who-use-angular-in-thailand/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -150,124 +144,29 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/who-use-angular-in-thailand-e2e/tsconfig.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
     "angular-th": {
-      "root": "projects/angular-th",
-      "sourceRoot": "projects/angular-th/src",
+      "root": "libs/angular-th",
+      "sourceRoot": "libs/angular-th/src",
       "projectType": "library",
-      "prefix": "angular-th",
+      "schematics": {},
       "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/angular-th/tsconfig.lib.json",
-            "project": "projects/angular-th/ng-package.json"
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/angular-th/tsconfig.lib.json",
-              "projects/angular-th/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "angular-quiz": {
-      "root": "projects/angular-quiz/",
-      "sourceRoot": "projects/angular-quiz/src",
-      "projectType": "application",
-      "prefix": "angular-quiz",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
-      },
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/angular-quiz",
-            "index": "projects/angular-quiz/src/index.html",
-            "main": "projects/angular-quiz/src/main.ts",
-            "polyfills": "projects/angular-quiz/src/polyfills.ts",
-            "tsConfig": "projects/angular-quiz/tsconfig.app.json",
-            "assets": [
-              "projects/angular-quiz/src/favicon.ico",
-              "projects/angular-quiz/src/assets"
-            ],
-            "styles": [
-              "projects/angular-quiz/src/styles.scss"
-            ],
-            "scripts": [
-              "projects/angular-quiz/src/assets/js/twitterFetcher.js"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/angular-quiz/src/environments/environment.ts",
-                  "with": "projects/angular-quiz/src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
-            }
+            "tsConfig": ["libs/angular-th/tsconfig.lib.json", "libs/angular-th/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+        "test": {
+          "builder": "@nrwl/jest:jest",
           "options": {
-            "browserTarget": "angular-quiz:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-quiz:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "angular-quiz:build"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-quiz/tsconfig.app.json",
-              "projects/angular-quiz/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "jestConfig": "libs/angular-th/jest.config.js",
+            "tsConfig": "libs/angular-th/tsconfig.spec.json"
           }
         }
       }
