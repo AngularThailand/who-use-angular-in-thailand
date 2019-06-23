@@ -82,8 +82,28 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "type:all",
+            "onlyDependOnLibsWithTags": ["type:all","type:page", "type:component", "type:util", "type:http", "type:resolver"],
+          },
+          {
+            "sourceTag": "type:page",
+            "onlyDependOnLibsWithTags": ["type:page", "type:component", "type:util", "type:http", "type:resolver"],
+          },
+          {
+            "sourceTag": "type:component",
+            "onlyDependOnLibsWithTags": ["type:component", "type:util", "type:resolver"],
+          },
+          {
+            "sourceTag": "type:http",
+            "onlyDependOnLibsWithTags": ["type:util", "type:http"],
+          },
+          {
+            "sourceTag": "type:util",
+            "onlyDependOnLibsWithTags": ["type:util"],
+          },
+          {
+            "sourceTag": "type:resolver",
+            "onlyDependOnLibsWithTags": ["type:http","type:util"],
           }
         ]
       }

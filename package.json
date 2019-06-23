@@ -51,6 +51,7 @@
     "lint": "nx lint && ng lint",
     "dep-graph": "nx dep-graph",
     "workspace-schematic": "nx workspace-schematic",
+    "nx:ci": "npm run affected:lint && npm run affected:test && npm run affected:e2e",
     "help": "nx help"
   },
   "private": false,

@@ -30,7 +30,7 @@ export default function(schema: any): Rule {
       {
         name: `${name}/pages`,
         style,
-        tags: `scope:${name},type:pages`
+        tags: `scope:${name},type:page`
       },
       { interactive: false }
     ),
@@ -40,7 +40,17 @@ export default function(schema: any): Rule {
       {
         name: `${name}/resolvers`,
         style,
-        tags: `scope:${name},type:resolvers`
+        tags: `scope:${name},type:resolver`
+      },
+      { interactive: false }
+    ),
+    externalSchematic(
+      '@nrwl/schematics',
+      'lib',
+      {
+        name: `${name}/util`,
+        style,
+        tags: `scope:${name},type:util`
       },
       { interactive: false }
     )
