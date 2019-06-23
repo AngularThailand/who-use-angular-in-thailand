@@ -6,17 +6,21 @@ import { of } from 'rxjs';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 const mockCompanyService = {
-  getCompanies: jest.fn(() => of({}))
+  getCompanies: () => of({})
 } as any;
 
 describe('AppComponent', () => {
   const app = new AppComponent(mockCompanyService);
-  app.ngOnInit();
-  app.companies$.subscribe();
+
   it('should call company service once', () => {
-    expect(mockCompanyService.getCompanies.mock.calls.length).toEqual(1);
+    spyOn(mockCompanyService, 'getCompanies').and.callThrough();
+    app.ngOnInit();
+    app.companies$.subscribe();
+    expect(mockCompanyService.getCompanies).toHaveBeenCalled();
   });
   it('should loaded to be true', () => {
+    app.ngOnInit();
+    app.companies$.subscribe();
     expect(app.loaded).toBeTruthy();
   });
 });

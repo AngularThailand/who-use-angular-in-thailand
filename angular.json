@@ -98,7 +98,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "apps/who-use-angular-in-thailand/src/test.ts",
             "polyfills": "apps/who-use-angular-in-thailand/src/polyfills.ts",
@@ -109,9 +109,7 @@
             "assets": [
               "apps/who-use-angular-in-thailand/src/favicon.ico",
               "apps/who-use-angular-in-thailand/src/assets"
-            ],
-            "jestConfig": "apps/who-use-angular-in-thailand/jest.config.js",
-            "setupFile": "apps/who-use-angular-in-thailand/src/test-setup.ts"
+            ]
           }
         },
         "lint": {
