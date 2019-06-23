@@ -48,7 +48,7 @@ export default function(schema: any): Rule {
       '@nrwl/schematics',
       'lib',
       {
-        name: `${name}/util`,
+        name: `${name}/utils`,
         style,
         tags: `scope:${name},type:util`
       },
