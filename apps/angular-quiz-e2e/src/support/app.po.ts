@@ -1,1 +1,2 @@
-export const getGreeting = () => cy.get('h1');
+export const getGreeting = () => cy.get('.mat-toolbar-row');
+export const getCards = () => cy.get('mat-card-title');
