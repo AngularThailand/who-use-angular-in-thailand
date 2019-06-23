@@ -134,11 +134,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "apps/who-use-angular-in-thailand-e2e/protractor.conf.js",
-            "devServerTarget": "ng-cli:serve"
+            "devServerTarget": "who-use-angular-in-thailand:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng-cli:serve:production"
+              "devServerTarget": "who-use-angular-in-thailand:serve:production"
             }
           }
         },
