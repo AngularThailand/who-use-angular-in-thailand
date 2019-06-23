@@ -16,6 +16,12 @@
     },
     "angular-th": {
       "tags": []
+    },
+    "angular-quiz-e2e": {
+      "tags": []
+    },
+    "angular-quiz": {
+      "tags": []
     }
   }
 }

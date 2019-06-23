@@ -170,7 +170,130 @@
           }
         }
       }
+    },
+    "angular-quiz": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/workspace:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/angular-quiz",
+      "sourceRoot": "apps/angular-quiz/src",
+      "prefix": "angular-quiz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/angular-quiz",
+            "index": "apps/angular-quiz/src/index.html",
+            "main": "apps/angular-quiz/src/main.ts",
+            "polyfills": "apps/angular-quiz/src/polyfills.ts",
+            "tsConfig": "apps/angular-quiz/tsconfig.app.json",
+            "aot": false,
+            "assets": ["apps/angular-quiz/src/favicon.ico", "apps/angular-quiz/src/assets"],
+            "styles": ["apps/angular-quiz/src/styles.scss"],
+            "scripts": ["apps/angular-quiz/src/assets/js/twitterFetcher.js"]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/angular-quiz/src/environments/environment.ts",
+                  "with": "apps/angular-quiz/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-quiz:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-quiz:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-quiz:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/angular-quiz/tsconfig.app.json", "apps/angular-quiz/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/angular-quiz/jest.config.js",
+            "tsConfig": "apps/angular-quiz/tsconfig.spec.json",
+            "setupFile": "apps/angular-quiz/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "angular-quiz-e2e": {
+      "root": "apps/angular-quiz-e2e",
+      "sourceRoot": "apps/angular-quiz-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/angular-quiz-e2e/cypress.json",
+            "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json",
+            "devServerTarget": "angular-quiz:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-quiz:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "who-use-angular-in-thailand"
+  "defaultProject": "who-use-angular-in-thailand",
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  }
 }

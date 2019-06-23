@@ -6,21 +6,7 @@ import { Injectable } from '@angular/core';
 import { TwitterSearchResponse, TwitterFetcher } from '../models/twitter.model';
 import { of, ReplaySubject, throwError } from 'rxjs';
 
-interface ConfigLikes {
-  likes: { screenName: string };
-  domId: string;
-  maxTweets: number;
-  enableLinks: boolean;
-  showUser: boolean;
-  showTime: boolean;
-  showImages: boolean;
-  dataOnly: boolean;
-  useEmoji: boolean;
-  lang: string;
-  customCallback: (tweets: any) => void;
-}
-
-declare var twitterFetcher: { fetch: (config: ConfigLikes) => void };
+declare var twitterFetcher: any;
 
 @Injectable({
   providedIn: 'root',
