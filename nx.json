@@ -15,7 +15,7 @@
       "tags": []
     },
     "angular-th": {
-      "tags": ["scope:angular-th","type:component"]
+      "tags": ["scope:angular-th", "type:component"]
     },
     "angular-quiz-e2e": {
       "tags": []
