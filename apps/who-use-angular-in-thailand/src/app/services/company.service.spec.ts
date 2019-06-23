@@ -7,7 +7,8 @@ import { tap } from 'rxjs/operators';
 describe('CompanyService', () => {
   it('should destruct companies key into company list', async(() => {
     const companies = [mockCompany()];
-    const httpMock = { get: jest.fn(() => of({companies})) };
+    const httpMock = { get: () => of({companies}) };
+    spyOn(httpMock, 'get').and.callThrough();
     const service = new CompanyService(httpMock as any);
     service.getCompanies().subscribe(data => {
       expect(httpMock.get).toHaveBeenCalledWith('/assets/data/companies.json');
@@ -16,7 +17,7 @@ describe('CompanyService', () => {
   }));
   it('should share a single subscription', () => {
     let subscriptionCount = 0;
-    const httpMock = { get: jest.fn(() => of({}).pipe(tap(() => subscriptionCount++))) } as any;
+    const httpMock = { get: () => of({}).pipe(tap(() => subscriptionCount++)) } as any;
     const service = new CompanyService(httpMock);
     expect(subscriptionCount).toEqual(0);
     const getCompanies = service.getCompanies();
