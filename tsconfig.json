@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -24,8 +24,12 @@
       "angular-th/*": [
         "dist/angular-th/*"
       ],
-      "core-js/es7/reflect": ["../node_modules/core-js/proposals/reflect-metadata"],
-      "core-js/es6/": ["./node_modules/core-js/es/"]
+      "core-js/es7/reflect": [
+        "../node_modules/core-js/proposals/reflect-metadata"
+      ],
+      "core-js/es6/": [
+        "./node_modules/core-js/es/"
+      ]
     }
   }
 }

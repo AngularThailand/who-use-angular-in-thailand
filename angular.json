@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "",
   "projects": {
     "who-use-angular-in-thailand": {
-      "root": "",
-      "sourceRoot": "src",
+      "root": "apps/who-use-angular-in-thailand",
+      "sourceRoot": "apps/who-use-angular-in-thailand/src",
       "projectType": "application",
       "prefix": "angular-th",
       "schematics": {
@@ -17,18 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/who-use-angular-in-thailand",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "outputPath": "dist/apps/who-use-angular-in-thailand",
+            "index": "apps/who-use-angular-in-thailand/src/index.html",
+            "main": "apps/who-use-angular-in-thailand/src/main.ts",
+            "polyfills": "apps/who-use-angular-in-thailand/src/polyfills.ts",
+            "tsConfig": "apps/who-use-angular-in-thailand/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/manifest.json"
+              "apps/who-use-angular-in-thailand/src/favicon.ico",
+              "apps/who-use-angular-in-thailand/src/assets",
+              "apps/who-use-angular-in-thailand/src/manifest.json"
             ],
             "styles": [
-              "src/styles.scss"
+              "apps/who-use-angular-in-thailand/src/styles.scss"
             ],
             "scripts": []
           },
@@ -36,8 +36,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "apps/who-use-angular-in-thailand/src/environments/environment.ts",
+                  "with": "apps/who-use-angular-in-thailand/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -54,8 +54,8 @@
             "gh-pages": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.gh-pages.prod.ts"
+                  "replace": "apps/who-use-angular-in-thailand/src/environments/environment.ts",
+                  "with": "apps/who-use-angular-in-thailand/src/environments/environment.gh-pages.prod.ts"
                 }
               ],
               "optimization": true,
@@ -99,12 +99,29 @@
             "browserTarget": "who-use-angular-in-thailand:build"
           }
         },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/who-use-angular-in-thailand/src/test.ts",
+            "polyfills": "apps/who-use-angular-in-thailand/src/polyfills.ts",
+            "tsConfig": "apps/who-use-angular-in-thailand/tsconfig.spec.json",
+            "karmaConfig": "apps/who-use-angular-in-thailand/karma.conf.js",
+            "styles": [
+              "apps/who-use-angular-in-thailand/src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/who-use-angular-in-thailand/src/favicon.ico",
+              "apps/who-use-angular-in-thailand/src/assets"
+            ]
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "apps/who-use-angular-in-thailand/tsconfig.app.json",
+              "apps/who-use-angular-in-thailand/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -114,28 +131,25 @@
       }
     },
     "who-use-angular-in-thailand-e2e": {
-      "root": "e2e/",
       "projectType": "application",
+      "root": "apps/who-use-angular-in-thailand-e2e",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "who-use-angular-in-thailand:serve"
+            "protractorConfig": "apps/who-use-angular-in-thailand-e2e/protractor.conf.js",
+            "devServerTarget": "ng-cli:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "who-use-angular-in-thailand:serve:production"
-            },
-            "gh-pages": {
-              "devServerTarget": "who-use-angular-in-thailand:serve:gh-pages"
+              "devServerTarget": "ng-cli:serve:production"
             }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
+            "tsConfig": "apps/who-use-angular-in-thailand-e2e/tsconfig.json",
             "exclude": [
               "**/node_modules/**"
             ]
@@ -251,34 +265,6 @@
               "projects/angular-quiz/tsconfig.app.json",
               "projects/angular-quiz/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "angular-quiz-e2e": {
-      "root": "projects/angular-quiz-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/angular-quiz-e2e/protractor.conf.js",
-            "devServerTarget": "angular-quiz:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "angular-quiz:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/angular-quiz-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
