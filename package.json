@@ -42,7 +42,7 @@
     "lint": "nx lint && ng lint",
     "dep-graph": "nx dep-graph",
     "workspace-schematic": "nx workspace-schematic",
-    "nx:ci": "npm run affected:lint && npm run affected:test -- --passWithNoTests && npm run affected:e2e",
+    "nx:ci": "npm run affected:lint && npm run affected:test && npm run affected:e2e",
     "nx:ci:who": "npm run affected:lint -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e",
     "nx:ci:quiz": "npm run affected:lint -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:test -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:e2e -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e",
     "help": "nx help"
