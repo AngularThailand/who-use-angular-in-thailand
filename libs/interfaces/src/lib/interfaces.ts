@@ -6,3 +6,7 @@ export interface Company {
   productUrls: string[];
   technologies: string[];
 }
+
+export interface CompaniesResponse {
+  companies: Company[];
+}

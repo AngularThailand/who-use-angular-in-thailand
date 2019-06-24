@@ -1,8 +1,9 @@
+import { CompaniesResponse } from '@who-use-angular-in-thailand/interfaces';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getData() {
+  getData(): CompaniesResponse {
     return ({
       'companies': [
         {

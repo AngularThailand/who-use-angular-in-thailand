@@ -1,7 +1,7 @@
 import { map, shareReplay } from 'rxjs/operators';
-import { Company } from '../model/company.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Company } from '@who-use-angular-in-thailand/interfaces';
 
 @Injectable({
   providedIn: 'root'
