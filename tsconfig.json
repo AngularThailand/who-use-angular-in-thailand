@@ -16,7 +16,8 @@
       "angular-th/*": ["dist/angular-th/*"],
       "core-js/es7/reflect": ["../node_modules/core-js/proposals/reflect-metadata"],
       "core-js/es6/": ["./node_modules/core-js/es/"],
-      "@who-use-angular-in-thailand/angular-th": ["libs/angular-th/src/index.ts"]
+      "@who-use-angular-in-thailand/angular-th": ["libs/angular-th/src/index.ts"],
+      "@who-use-angular-in-thailand/interfaces": ["libs/interfaces/src/index.ts"]
     }
   }
 }
