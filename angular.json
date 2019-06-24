@@ -27,7 +27,9 @@
               "apps/who-use-angular-in-thailand/src/assets",
               "apps/who-use-angular-in-thailand/src/manifest.json"
             ],
-            "styles": ["apps/who-use-angular-in-thailand/src/styles.scss"],
+            "styles": [
+              "apps/who-use-angular-in-thailand/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +82,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "who-use-angular-in-thailand:build",
-            "proxyConfig": "proxy.conf.json"
+            "proxyConfig": "apps/who-use-angular-in-thailand/proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -104,7 +106,9 @@
             "polyfills": "apps/who-use-angular-in-thailand/src/polyfills.ts",
             "tsConfig": "apps/who-use-angular-in-thailand/tsconfig.spec.json",
             "karmaConfig": "apps/who-use-angular-in-thailand/karma.conf.js",
-            "styles": ["apps/who-use-angular-in-thailand/src/styles.scss"],
+            "styles": [
+              "apps/who-use-angular-in-thailand/src/styles.scss"
+            ],
             "scripts": [],
             "assets": [
               "apps/who-use-angular-in-thailand/src/favicon.ico",
@@ -119,7 +123,9 @@
               "apps/who-use-angular-in-thailand/tsconfig.app.json",
               "apps/who-use-angular-in-thailand/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -144,7 +150,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/who-use-angular-in-thailand-e2e/tsconfig.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -158,8 +166,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["libs/angular-th/tsconfig.lib.json", "libs/angular-th/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "libs/angular-th/tsconfig.lib.json",
+              "libs/angular-th/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -192,9 +205,16 @@
             "polyfills": "apps/angular-quiz/src/polyfills.ts",
             "tsConfig": "apps/angular-quiz/tsconfig.app.json",
             "aot": false,
-            "assets": ["apps/angular-quiz/src/favicon.ico", "apps/angular-quiz/src/assets"],
-            "styles": ["apps/angular-quiz/src/styles.scss"],
-            "scripts": ["apps/angular-quiz/src/assets/js/twitterFetcher.js"]
+            "assets": [
+              "apps/angular-quiz/src/favicon.ico",
+              "apps/angular-quiz/src/assets"
+            ],
+            "styles": [
+              "apps/angular-quiz/src/styles.scss"
+            ],
+            "scripts": [
+              "apps/angular-quiz/src/assets/js/twitterFetcher.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -243,8 +263,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/angular-quiz/tsconfig.app.json", "apps/angular-quiz/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "apps/angular-quiz/tsconfig.app.json",
+              "apps/angular-quiz/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -279,6 +304,64 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json"
+          }
+        }
+      }
+    },
+    "api": {
+      "root": "apps/api",
+      "sourceRoot": "apps/api/src",
+      "projectType": "application",
+      "prefix": "api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/api",
+            "main": "apps/api/src/main.ts",
+            "tsConfig": "apps/api/tsconfig.app.json",
+            "assets": [
+              "apps/api/src/assets"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/api/src/environments/environment.ts",
+                  "with": "apps/api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "api:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/api/tsconfig.app.json",
+              "apps/api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/api/jest.config.js",
+            "tsConfig": "apps/api/tsconfig.spec.json"
           }
         }
       }

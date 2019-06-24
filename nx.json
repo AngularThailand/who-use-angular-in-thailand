@@ -9,19 +9,34 @@
   },
   "projects": {
     "who-use-angular-in-thailand": {
-      "tags": ["scope:who-use-angular-in-thailand", "type:all"]
+      "tags": [
+        "scope:who-use-angular-in-thailand",
+        "type:all"
+      ]
     },
     "who-use-angular-in-thailand-e2e": {
       "tags": []
     },
     "angular-th": {
-      "tags": ["scope:angular-th", "type:component"]
+      "tags": [
+        "scope:angular-th",
+        "type:component"
+      ]
     },
     "angular-quiz-e2e": {
       "tags": []
     },
     "angular-quiz": {
-      "tags": ["scope:angular-quiz", "type:all"]
+      "tags": [
+        "scope:angular-quiz",
+        "type:all"
+      ]
+    },
+    "api": {
+      "tags": [
+        "scope:all",
+        "type:api"
+      ]
     }
   }
 }
