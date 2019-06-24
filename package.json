@@ -87,10 +87,10 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@nrwl/node": "8.1.2",
     "@nestjs/schematics": "^6.3.0",
     "@nestjs/testing": "^6.2.4",
     "@nrwl/nest": "8.1.2",
-    "@nrwl/node": "8.1.2",
     "@nrwl/react": "8.1.2",
     "@types/react": "16.8.4",
     "@types/react-dom": "16.8.2",
