@@ -7,6 +7,3 @@ export interface Company {
   technologies: string[];
 }
 
-export interface CompaniesResponse {
-  companies: Company[];
-}
