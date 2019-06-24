@@ -83,27 +83,31 @@
         "depConstraints": [
           {
             "sourceTag": "type:all",
-            "onlyDependOnLibsWithTags": ["type:all","type:page", "type:component", "type:util", "type:http", "type:resolver"]
+            "onlyDependOnLibsWithTags": ["type:all","type:page", "type:component", "type:util", "type:http", "type:resolver", "type:interface"]
           },
           {
             "sourceTag": "type:page",
-            "onlyDependOnLibsWithTags": ["type:page", "type:component", "type:util", "type:http", "type:resolver"]
+            "onlyDependOnLibsWithTags": ["type:page", "type:component", "type:util", "type:http", "type:resolver", "type:interface"]
           },
           {
             "sourceTag": "type:component",
-            "onlyDependOnLibsWithTags": ["type:component", "type:util", "type:resolver"]
+            "onlyDependOnLibsWithTags": ["type:component", "type:util", "type:resolver", "type:interface"]
           },
           {
             "sourceTag": "type:http",
-            "onlyDependOnLibsWithTags": ["type:util", "type:http"]
+            "onlyDependOnLibsWithTags": ["type:util", "type:http", "type:interface"]
           },
           {
             "sourceTag": "type:util",
-            "onlyDependOnLibsWithTags": ["type:util"]
+            "onlyDependOnLibsWithTags": ["type:util", "type:interface"]
           },
           {
             "sourceTag": "type:resolver",
-            "onlyDependOnLibsWithTags": ["type:http","type:util"]
+            "onlyDependOnLibsWithTags": ["type:http","type:util", "type:interface"]
+          },
+          {
+            "sourceTag": "type:api",
+            "onlyDependOnLibsWithTags": ["type:interface", "type:util"]
           }
         ]
       }

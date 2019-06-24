@@ -1,7 +1,7 @@
+import { Company } from '@who-use-angular-in-thailand/interfaces';
 import { CompanyService } from './services/company.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Company } from './model/company.model';
 import { finalize } from 'rxjs/operators';
 
 @Component({
