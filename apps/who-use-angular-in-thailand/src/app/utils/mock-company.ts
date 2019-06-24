@@ -1,4 +1,4 @@
-import { Company } from '../model/company.model';
+import { Company } from '@who-use-angular-in-thailand/interfaces';
 
 export const mockCompany = (companies: Partial<Company> = {}): Company => ({
   name: 'Angular',

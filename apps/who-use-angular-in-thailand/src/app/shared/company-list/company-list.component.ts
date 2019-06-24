@@ -1,4 +1,4 @@
-import { Company } from './../../model/company.model';
+import { Company } from '@who-use-angular-in-thailand/interfaces';
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
