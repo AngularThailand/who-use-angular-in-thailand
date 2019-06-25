@@ -91,7 +91,7 @@
           },
           {
             "sourceTag": "type:component",
-            "onlyDependOnLibsWithTags": ["type:component", "type:util", "type:resolver", "type:interface"]
+            "onlyDependOnLibsWithTags": ["type:component", "type:util", "type:interface"]
           },
           {
             "sourceTag": "type:http",
