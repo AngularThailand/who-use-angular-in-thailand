@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
   "fileServerFolder": "../../dist/out-tsc/apps/angular-quiz-e2e",
   "fixturesFolder": "../../dist/out-tsc/apps/angular-quiz-e2e/src/fixtures",
   "integrationFolder": "../../dist/out-tsc/apps/angular-quiz-e2e/src/integration",
