@@ -129,7 +129,7 @@
   "husky": {
     "hooks": {
       "pre-push": "npm run nx:ci",
-      "pre-commit": "npm run format"
+      "pre-commit": "npm run format:check -- --uncommitted && git add"
     }
   }
 }
