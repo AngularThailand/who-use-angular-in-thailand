@@ -128,7 +128,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run nx:ci"
+      "pre-push": "npm run nx:ci",
+      "pre-commit": "npm run format"
     }
   }
 }
