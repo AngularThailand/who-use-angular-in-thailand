@@ -6,7 +6,7 @@
     </mat-card-subtitle>
   </mat-card-header>
   <div fxLayoutAlign="center center" style="height: 300px">
-    <img *ngIf="company.logo as logo" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
+    <img *ngIf="company.logo as logo" loading="lazy" fxFlexAlign="center" class="company-logo" [src]="logo" [alt]="company.name" />
   </div>
   <mat-card-content>
     <p class="description">{{company.description}}</p>
@@ -22,7 +22,7 @@
   <mat-card-footer>
     <div fxLayout="row wrap" fxLayoutAlign="start">
       <ng-container *ngFor="let tech of company.technologies">
-        <img *ngIf="tech | techToIcon as icon; else techText" class="tech-logo" [src]="icon" [alt]="tech"/>
+        <img *ngIf="tech | techToIcon as icon; else techText" loading="lazy" class="tech-logo" [src]="icon" [alt]="tech"/>
         <ng-template #techText>
           <span fxFlexAlign="center">{{tech}}</span>
         </ng-template>

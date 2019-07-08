@@ -4,7 +4,7 @@
     <mat-card-title>{{quizCard.name}}</mat-card-title>
     <mat-card-subtitle>{{quizCard.date}}</mat-card-subtitle>
   </mat-card-header>
-  <img *ngIf="quizCard.img as img" mat-card-image [src]="img" alt="Angular scores">
+  <img *ngIf="quizCard.img as img" loading="lazy" mat-card-image [src]="img" alt="Angular scores">
   <mat-card-content *ngIf="quizCard.tweet as tweet">
     <p [innerHTML]="tweet"></p>
   </mat-card-content>
