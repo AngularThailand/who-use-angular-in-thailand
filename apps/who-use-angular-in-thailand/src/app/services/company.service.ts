@@ -10,8 +10,7 @@ export class CompanyService {
 
   constructor(private http: HttpClient) { }
   getCompanies() {
-    // TODO: fix back to /assets/data/companies.json
-    return this.http.get<Company[]>('/api').pipe(
+    return this.http.get<Company[]>('/assets/data/companies.json').pipe(
       shareReplay(1));
   }
 }
