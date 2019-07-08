@@ -11,8 +11,7 @@ describe('CompanyService', () => {
     spyOn(httpMock, 'get').and.callThrough();
     const service = new CompanyService(httpMock as any);
     service.getCompanies().subscribe(data => {
-      // TODO: fix back to /assets/data/companies.json
-      expect(httpMock.get).toHaveBeenCalledWith('http://localhost:3333/api');
+      expect(httpMock.get).toHaveBeenCalledWith('/assets/data/companies.json');
       expect(data).toBe(companies);
     });
   }));
