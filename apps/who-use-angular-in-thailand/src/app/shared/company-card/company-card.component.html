@@ -15,7 +15,7 @@
     <div fxLayout="column" fxLayoutAlign="start">
       <b>Product:</b>
       <ng-container *ngFor="let url of company.productUrls">
-        <a style="width: 300px; overflow-x: hidden" [href]="url" target="_blank" rel="noopener">{{url}}</a>
+        <a style="overflow-x: hidden" [href]="url" target="_blank" rel="noopener">{{url}}</a>
       </ng-container>
     </div>
   </mat-card-content>

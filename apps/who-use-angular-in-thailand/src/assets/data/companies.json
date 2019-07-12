@@ -1,5 +1,13 @@
 [
   {
+    "name": "7 Peaks Software",
+    "description": "International design & software company based in Bangkok",
+    "logo": "assets/companies/7peaks.svg",
+    "companyUrl": "https://7peakssoftware.com",
+    "productUrls": ["https://7peakssoftware.com/our-work"],
+    "technologies": ["angular", "nx", "ngrx", "ios", "android"]
+  },
+  {
     "name": "Humanize Co.,Ltd.",
     "description": "Better Life by Simplified Innovation for Human",
     "logo": "assets/companies/humanize.png",

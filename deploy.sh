@@ -8,7 +8,7 @@ if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
   cd ..
 
 
-  cp -a dist/who-use-angular-in-thailand/. project/.
+  cp -a dist/apps/who-use-angular-in-thailand/. project/.
 
   mkdir -p project/.circleci && cp -a .circleci/. project/.circleci/.
   cd project
