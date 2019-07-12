@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="336" height="356">
-  <path d="M167 0L0 59l26 219 142 78 141-79 27-219L167 0z" fill="#b3b3b3"/>
-  <path d="M319 71L167 19v318l128-70 24-196z" fill="#af2b2d"/>
-  <path d="M19 71l22 197 126 69V19L19 71z" fill="#df2e31"/>
-  <path d="M202 177l-35-73-31 73h66zm14 31h-93l-21 52H64L167 30l107 230h-36l-22-52z" fill="#f2f2f2"/>
-  <path d="M167 30v74l35 73h-35v31h49l22 52 37 1L167 30z" fill="#b3b3b3"/>
-</svg>
