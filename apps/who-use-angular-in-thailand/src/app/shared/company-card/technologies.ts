@@ -15,6 +15,7 @@ export const Technologies = {
   nest: 'nest',
   nestjs: 'nest',
   ngrx: 'ngrx',
+  nx: 'nx',
   // https://nodejs.org/en/about/resources/
   node: 'nodejs',
   nodejs: 'nodejs',
