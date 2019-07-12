@@ -1,0 +1,13 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 147">
+  <defs>
+    <style>
+      .cls-1{fill:#478aff}
+    </style>
+  </defs>
+  <path class="cls-1" d="M108 223a34 34 0 1 0 33 33 34 34 0 0 0-33-33z" transform="translate(-34 -182)"/>
+  <circle class="cls-1" cx="122" cy="28" r="15"/>
+  <path class="cls-1" d="M175 226l-1-2-1 1a23 23 0 0 1-9 7h-1v1a60 60 0 1 1-30-31h1l1-1a23 23 0 0 1 7-9l1-1h-2a73 73 0 0 0-33-9 74 74 0 1 0 67 43z" transform="translate(-34 -182)"/>
+  <path class="cls-1" d="M185 42h15v64h-15zm167 0h16v64h-16z"/>
+  <path class="cls-1" d="M351 223c-11 0-20 6-22 8l-1-7h-13v64h16v-39c0-7 10-14 18-14s13 8 13 16v37h16v-35c-1-17-8-30-27-30zm92 53c-12 0-20-9-20-20s8-20 20-20c9 0 16 9 16 9l11-7c-3-5-7-8-12-11a29 29 0 0 0-15-4c-19 0-34 14-34 33s15 34 34 34a29 29 0 0 0 15-5c5-3 8-6 12-11l-12-7s-6 9-15 9z" transform="translate(-34 -182)"/>
+  <path id="path3000" class="cls-1" d="M275 223a33 33 0 0 0-34 33c0 18 14 33 34 33 19 1 33-13 33-33 0-22-17-33-33-33zm0 13c10 0 19 7 19 20 0 12-9 20-19 20-11 0-19-8-19-20s8-20 19-20z" transform="translate(-34 -182)"/>
+</svg>
