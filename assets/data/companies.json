@@ -5,7 +5,7 @@
     "logo": "assets/companies/7peaks.svg",
     "companyUrl": "https://7peakssoftware.com",
     "productUrls": ["https://7peakssoftware.com/our-work"],
-    "technologies": ["angular", "nx", "ngrx", "ios", "android"]
+    "technologies": ["angular", "nx", "ngrx"]
   },
   {
     "name": "Humanize Co.,Ltd.",
@@ -13,7 +13,7 @@
     "logo": "assets/companies/humanize.png",
     "companyUrl": "https://humanize.co.th",
     "productUrls": ["https://nize.ai/nize-digitalthailand.html"],
-    "technologies": ["angular", "nestjs", "ngrx", "firebase", "tensorflow", "python"]
+    "technologies": ["angular", "nestjs", "ngrx"]
   },
   {
     "name": "ActiMotive",
@@ -21,7 +21,7 @@
     "logo": "assets/companies/actimotive.png",
     "companyUrl": "http://www.acti-motive.com",
     "productUrls": ["http://www.acti-motive.com/product.html", "https://actimotive.app"],
-    "technologies": ["angular", "electron", "firebase", "nodejs", "pwa", "rxjs", "scss", "typescript", "webrtc"]
+    "technologies": ["angular"]
   },
   {
     "name": "IT One",
@@ -29,7 +29,7 @@
     "logo": "assets/companies/itone.png",
     "companyUrl": "https://www.itone.co.th",
     "productUrls": [],
-    "technologies": ["angular", "java"]
+    "technologies": ["angular"]
   },
   {
     "name": "CalCal",
@@ -37,7 +37,7 @@
     "logo": "assets/companies/calcal.png",
     "companyUrl": "https://www.cal-cal.com",
     "productUrls": ["https://calcal-store-dev.firebaseapp.com"],
-    "technologies": ["angular", "firebase", "gcp", "android", "ios"]
+    "technologies": ["angular"]
   },
   {
     "name": "ASC",
@@ -45,7 +45,7 @@
     "logo": "assets/companies/asc.png",
     "companyUrl": "http://www.grpasc.com/",
     "productUrls": [],
-    "technologies": ["angular", "java", "neo4j"]
+    "technologies": ["angular"]
   },
   {
     "name": "Youngcyber Digital Technology",
@@ -54,11 +54,10 @@
     "companyUrl": "http://www.youngcyber.co.th",
     "productUrls": [
       "https://www.jisaims.com/",
-      "http://www.halaltourismthailand.com/mobile",
       "http://pufree.tech/",
       "https://halq.app/"
     ],
-    "technologies": ["angularjs", "angular", "ionic", "firebase", "ios", "android"]
+    "technologies": ["angularjs", "angular", "ionic"]
   },
   {
     "name": "incen Co.,Ltd.",
@@ -66,7 +65,7 @@
     "logo": "",
     "companyUrl": "https://www.hostxdesign.com",
     "productUrls": [],
-    "technologies": ["angular", "firebase", "nodejs"]
+    "technologies": ["angular"]
   },
   {
     "name": "Allianz Technology",
@@ -74,7 +73,7 @@
     "logo": "assets/companies/allianz.svg",
     "companyUrl": "https://www.allianz.com/en.html",
     "productUrls": ["https://api-test.allianz.com/ngx-ndbx-dev/"],
-    "technologies": ["angular", "scss", "typescript"]
+    "technologies": ["angular"]
   },
   {
     "name": "Vertice international ",
@@ -82,7 +81,7 @@
     "logo": "assets/companies/vertice.png",
     "companyUrl": "http://www.vertice-international.com/company",
     "productUrls": ["https://kurumajiten.jp/login"],
-    "technologies": ["angular", "rxjs", "ngrx", "scss", "typescript"]
+    "technologies": ["angular", "ngrx"]
   },
   {
     "name": "Infinite",
@@ -90,7 +89,7 @@
     "logo": "assets/companies/Infinite-staffing.png",
     "companyUrl": "https://infinite-staff.com",
     "productUrls": [""],
-    "technologies": ["angular", "nodejs", "typescript", "scss"]
+    "technologies": ["angular"]
   },
   {
     "name": "K.Stone Corporation Ltd.",
@@ -98,7 +97,7 @@
     "logo": "assets/companies/kstone.gif",
     "companyUrl": "http://www.kstonecorp.co.th/",
     "productUrls": [],
-    "technologies": ["angular", "firebase", "nodejs", "typescript"]
+    "technologies": ["angular"]
   },
   {
     "name": "Exzy",
@@ -106,7 +105,7 @@
     "logo": "assets/companies/exzy.png",
     "companyUrl": "http://www.exzy.me/",
     "productUrls": ["https://exzymeeting.exzycloud.com", "https://www.meetintouch.com"],
-    "technologies": ["angularjs", "angular", "ngrx", "jasmine-marbles", "cordova", "typescript", "scss"]
+    "technologies": ["angularjs", "angular", "ngrx", "jasmine-marbles"]
   },
   {
     "name": "BUILK ONE GROUP",
@@ -114,7 +113,7 @@
     "logo": "assets/companies/builkone.png",
     "companyUrl": "https://www.builk.one/",
     "productUrls": ["https://www.builk.com/en/"],
-    "technologies": ["angular", "scss", "rxjs"]
+    "technologies": ["angular"]
   },
   {
     "name": "ODDS Team",
@@ -122,7 +121,7 @@
     "logo": "assets/companies/odds.png",
     "companyUrl": "https://web.facebook.com/oddsteam/",
     "productUrls": [],
-    "technologies": ["angular", "web", "go", "android", "ios"]
+    "technologies": ["angular"]
   },
   {
     "name": "Indistinct",
@@ -130,7 +129,7 @@
     "logo": "",
     "companyUrl": "",
     "productUrls": [],
-    "technologies": ["angular", "firebase", "gcp", "android", "ios", "ionic", "hybrid"]
+    "technologies": ["angular", "ionic"]
   },
   {
     "name": "Quo Bangkok",
@@ -146,7 +145,7 @@
     "logo": "assets/companies/krungsri-auto.png",
     "companyUrl": "https://www.krungsriauto.com",
     "productUrls": [],
-    "technologies": ["angularjs", "localstorage", "android", "ios"]
+    "technologies": ["angularjs"]
   },
   {
     "name": "InterSet Research and Solution",
@@ -154,7 +153,7 @@
     "logo": "assets/companies/interset.png",
     "companyUrl": "https://interset.co.th/",
     "productUrls": ["https://interset.co.th/en/products-services/"],
-    "technologies": ["angularjs", "typescript", "asp.net"]
+    "technologies": ["angularjs"]
   },
   {
     "name": "iPassion Co., Ltd",
@@ -170,7 +169,7 @@
     "logo": "assets/companies/scoutout.png",
     "companyUrl": "https://www.scoutout.net",
     "productUrls": ["https://www.linejobs.me"],
-    "technologies": ["angular", "firebase", "gcp", "java", "python"]
+    "technologies": ["angular"]
   },
   {
     "name": "Aspiron Co.,Ltd.",
@@ -178,6 +177,6 @@
     "logo": "assets/companies/aspiron.svg",
     "companyUrl": "https://aspiron.co.th",
     "productUrls": [],
-    "technologies": ["angularjs", "java"]
+    "technologies": ["angularjs"]
   }
 ]
