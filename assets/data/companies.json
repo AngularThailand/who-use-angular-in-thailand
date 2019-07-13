@@ -19,8 +19,8 @@
     "name": "ActiMotive",
     "description": "Experience the Fitware Revolution",
     "logo": "assets/companies/actimotive.png",
-    "companyUrl": "http://www.acti-motive.com",
-    "productUrls": ["http://www.acti-motive.com/product.html", "https://actimotive.app"],
+    "companyUrl": "https://actimotive.app",
+    "productUrls": ["https://actimotive.app"],
     "technologies": ["angular"]
   },
   {
@@ -112,7 +112,7 @@
     "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
     "logo": "assets/companies/builkone.png",
     "companyUrl": "https://www.builk.one/",
-    "productUrls": ["https://www.builk.com/en/"],
+    "productUrls": ["https://cost.builk.com"],
     "technologies": ["angular"]
   },
   {
