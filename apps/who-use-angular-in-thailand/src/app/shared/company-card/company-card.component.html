@@ -10,14 +10,14 @@
   <mat-card-content>
     <p class="description">{{company.description}}</p>
   </mat-card-content>
-  <mat-card-content *ngIf="company.productUrls.length > 0">
+  <!-- <mat-card-content *ngIf="company.productUrls.length > 0">
     <div fxLayout="column" fxLayoutAlign="start">
       <b>Product:</b>
       <ng-container *ngFor="let url of company.productUrls">
         <a style="overflow-x: hidden" [href]="url" target="_blank" rel="noopener">{{url}}</a>
       </ng-container>
     </div>
-  </mat-card-content>
+  </mat-card-content> -->
   <mat-card-footer>
     <div fxLayout="row wrap" fxLayoutAlign="start">
       <ng-container *ngFor="let tech of company.technologies">
