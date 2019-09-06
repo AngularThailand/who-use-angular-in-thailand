@@ -123,7 +123,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run nx:ci",
+      "pre-push": "npm run nx:ci:dev",
       "pre-commit": "lint-staged"
     }
   },
