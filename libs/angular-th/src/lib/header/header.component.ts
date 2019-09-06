@@ -11,6 +11,5 @@ export class HeaderComponent {
   @Input() titleTh: string;
   @Input() actionUrl: string;
   @Input() actionName: string;
-  @Input() actionMatIcon: string;
   constructor() { }
 }
