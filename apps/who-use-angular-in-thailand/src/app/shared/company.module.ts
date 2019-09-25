@@ -27,7 +27,6 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     CompanyListComponent,
-    CompanyCardComponent,
   ]
 })
-export class SharedModule { }
+export class CompanyModule { }
