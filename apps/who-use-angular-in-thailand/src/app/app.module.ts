@@ -1,4 +1,4 @@
-import { CompanyModule } from './shared/company.module';
+import { CompanyModule } from './company/company.module';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
