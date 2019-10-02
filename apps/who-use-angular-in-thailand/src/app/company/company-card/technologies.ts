@@ -2,6 +2,8 @@ export const Technologies = {
   android: 'android',
   angular: 'angular',
   angularjs: 'angularjs',
+  aws: 'aws',
+  bootstrap4: 'bootstrap4',
   cordova: 'cordova',
   electron: 'electron',
   electronjs: 'electron',
@@ -20,6 +22,7 @@ export const Technologies = {
   node: 'nodejs',
   nodejs: 'nodejs',
   neo4j: 'neo4j',
+  netcore: 'netcore',
   nativescript: 'nativescript',
   // https://github.com/webmaxru/progressive-web-apps-logo -> https://diekus.com/logo-pwinter/
   pwa: 'pwa',
