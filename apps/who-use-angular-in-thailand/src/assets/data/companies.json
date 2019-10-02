@@ -112,8 +112,8 @@
     "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
     "logo": "assets/companies/builkone.png",
     "companyUrl": "https://www.builk.one/",
-    "productUrls": ["https://cost.builk.com"],
-    "technologies": ["angular"]
+    "productUrls": ["https://www.builk.one/builk/","https://www.builk.one/jubili-by-builk/","https://www.builk.one/kwanjai_by_builk/"],
+    "technologies": ["angular","rxjs","sass","bootstrap4","netcore","aws"]
   },
   {
     "name": "ODDS Team",
