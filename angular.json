@@ -119,7 +119,7 @@
               "apps/who-use-angular-in-thailand/tsconfig.app.json",
               "apps/who-use-angular-in-thailand/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand/**"]
           }
         }
       }
@@ -144,7 +144,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/who-use-angular-in-thailand-e2e/tsconfig.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand-e2e/**"]
           }
         }
       }
@@ -159,7 +159,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/angular-th/tsconfig.lib.json", "libs/angular-th/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!libs/angular-th/**"]
           }
         },
         "test": {
@@ -244,7 +244,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/angular-quiz/tsconfig.app.json", "apps/angular-quiz/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!apps/angular-quiz/**"]
           }
         },
         "test": {
@@ -278,7 +278,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json"
+            "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json",
+            "exclude": ["!apps/angular-quiz-e2e/**"]
           }
         }
       }
@@ -322,7 +323,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/api/tsconfig.app.json", "apps/api/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!apps/api/**"]
           }
         },
         "test": {
@@ -344,7 +345,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/interfaces/tsconfig.lib.json", "libs/interfaces/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "exclude": ["**/node_modules/**", "!libs/interfaces/**"]
           }
         },
         "test": {
