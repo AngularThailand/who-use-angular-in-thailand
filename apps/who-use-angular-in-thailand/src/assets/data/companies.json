@@ -1,5 +1,13 @@
 [
   {
+    "name": "FlowAccount",
+    "description": "FlowAccount is a Cloud Accounting Software for Thai Small Businesses",
+    "logo": "assets/companies/flowaccount.png",
+    "companyUrl": "https://flowaccount.com",
+    "productUrls": [],
+    "technologies": ["angular", "angularjs", "typescript", "rxjs", "ngrx", "firebase", "aws"]
+  },
+  {
     "name": "7 Peaks Software",
     "description": "International design & software company based in Bangkok",
     "logo": "assets/companies/7peaks.svg",
@@ -52,11 +60,7 @@
     "description": "Develop Platform , Training , Consulte About Digital technology ",
     "logo": "assets/companies/youngcyber.png",
     "companyUrl": "http://www.youngcyber.co.th",
-    "productUrls": [
-      "https://www.jisaims.com/",
-      "http://pufree.tech/",
-      "https://halq.app/"
-    ],
+    "productUrls": ["https://www.jisaims.com/", "http://pufree.tech/", "https://halq.app/"],
     "technologies": ["angularjs", "angular", "ionic"]
   },
   {
@@ -112,8 +116,12 @@
     "description": "Digitizing C+RE industry in SEA to increase efficiency & mitigate risks.",
     "logo": "assets/companies/builkone.png",
     "companyUrl": "https://www.builk.one/",
-    "productUrls": ["https://www.builk.one/builk/","https://www.builk.one/jubili-by-builk/","https://www.builk.one/kwanjai_by_builk/"],
-    "technologies": ["angular","rxjs","sass","bootstrap4","netcore","aws"]
+    "productUrls": [
+      "https://www.builk.one/builk/",
+      "https://www.builk.one/jubili-by-builk/",
+      "https://www.builk.one/kwanjai_by_builk/"
+    ],
+    "technologies": ["angular", "rxjs", "sass", "bootstrap4", "netcore", "aws"]
   },
   {
     "name": "ODDS Team",
@@ -178,13 +186,5 @@
     "companyUrl": "https://aspiron.co.th",
     "productUrls": [],
     "technologies": ["angularjs"]
-  },
-  {
-    "name": "FlowAccount",
-    "description": "FlowAccount is a Cloud Accounting Software for Thai Small Businesses",
-    "logo": "assets/companies/flowaccount.png",
-    "companyUrl": "https://flowaccount.com",
-    "productUrls": [],
-    "technologies": ["angular", "angularjs", "typescript", "rxjs", "ngrx", "firebase", "aws"]
   }
 ]
