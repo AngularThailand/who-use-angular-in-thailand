@@ -40,7 +40,8 @@
     "nx:ci:who": "npm run affected:lint -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e",
     "nx:ci:quiz": "npm run affected:lint -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:test -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:e2e -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e",
     "help": "nx help",
-    "nx": "nx"
+    "nx": "nx",
+    "pree2e": "webdriver-manager update --versions.chrome=77.0.3865.40"
   },
   "private": false,
   "dependencies": {
