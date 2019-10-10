@@ -178,5 +178,13 @@
     "companyUrl": "https://aspiron.co.th",
     "productUrls": [],
     "technologies": ["angularjs"]
+  },
+  {
+    "name": "FlowAccount",
+    "description": "FlowAccount is a Cloud Accounting Software for Thai Small Businesses",
+    "logo": "assets/companies/flowaccount.png",
+    "companyUrl": "https://flowaccount.com",
+    "productUrls": [],
+    "technologies": ["angular", "angularjs", "typescript", "rxjs", "ngrx", "firebase", "aws"]
   }
 ]
