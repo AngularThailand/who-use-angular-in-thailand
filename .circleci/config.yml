@@ -42,13 +42,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run lint!
-      - run: npm run affected:lint -- --exclude=angular-quiz,angular-quiz-e2e
+      - run: npm run affected:lint -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD
 
       # run unit tests!
-      - run: npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e
+      - run: npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD
 
       # run e2e!
-      - run: npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e
+      - run: npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD
 
       # run build
       - run: npm run build:gh

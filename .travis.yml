@@ -18,9 +18,9 @@ install:
   - npm install -g @angular/cli@latest
   - npm ci
 script:
-  - npm run affected:lint -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e
-  - npm run affected:test -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e
-  - npm run affected:e2e -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e
+  - npm run affected:lint -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e --base=HEAD~1 --head=HEAD
+  - npm run affected:test -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e --base=HEAD~1 --head=HEAD
+  - npm run affected:e2e -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e --base=HEAD~1 --head=HEAD
   - npm run build:app:quiz
 before_deploy:
   - mv dist/apps/angular-quiz dist/
