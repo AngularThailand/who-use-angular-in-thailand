@@ -132,5 +132,6 @@
       "nx format:write --uncommitted",
       "git add"
     ]
-  }
+  },
+  "author": "perjerz3434"
 }
