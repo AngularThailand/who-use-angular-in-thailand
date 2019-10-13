@@ -48,6 +48,7 @@ jobs:
       - run: npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD
 
       # run e2e!
+      - run: npm run pree2e
       - run: npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD -- --webdriver-update=false
 
       # run build
