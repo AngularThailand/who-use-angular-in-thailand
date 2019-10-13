@@ -186,5 +186,13 @@
     "companyUrl": "https://aspiron.co.th",
     "productUrls": [],
     "technologies": ["angularjs"]
+  },
+  {
+    "name": "Connex Business Online Co.,Ltd.",
+    "description": "CONNEX, Thai Software Production House, promises to deliver high standard of software development services.",
+    "logo": "assets/companies/connex.png",
+    "companyUrl": "http://b-connex.net",
+    "productUrls": [],
+    "technologies": ["angularjs", "netcore"]
   }
 ]
