@@ -36,7 +36,7 @@
     "lint": "nx workspace-lint && ng lint",
     "dep-graph": "nx dep-graph",
     "workspace-schematic": "nx workspace-schematic",
-    "nx:ci:dev": "npm run affected:lint -- --base=HEAD~1 --head=HEAD && npm run affected:test -- --base=HEAD~1 --head=HEAD && npm run affected:e2e --base=HEAD~1 --head=HEAD",
+    "nx:ci:dev": "npm run affected:lint -- --base=HEAD~1 --head=HEAD && npm run affected:test -- --base=HEAD~1 --head=HEAD && npm run pree2e && npm run affected:e2e -- --base=HEAD~1 --head=HEAD -- --webdriver-update=false",
     "nx:ci:who": "npm run affected:lint -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e && npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e",
     "nx:ci:quiz": "npm run affected:lint -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:test -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e && npm run affected:e2e -- --exclude=who-use-angular-in-thailand,who-use-angular-in-thailand-e2e",
     "help": "nx help",
