@@ -194,5 +194,13 @@
     "companyUrl": "http://b-connex.net",
     "productUrls": [],
     "technologies": ["angularjs", "netcore"]
+  },
+  {
+    "name": "KBTG",
+    "description": "Kasikorn Business Technology Group",
+    "logo": "http://www.cesmartcamp.com/career/2018/KBTG/logo_full.png",
+    "companyUrl": "http://www.kbtg.tech/th",
+    "productUrls": ["http://www.kbtg.tech/th/#tech-serv"],
+    "technologies": ["angular"]
   }
 ]
