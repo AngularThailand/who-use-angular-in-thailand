@@ -129,7 +129,7 @@
     "logo": "assets/companies/odds.png",
     "companyUrl": "https://web.facebook.com/oddsteam/",
     "productUrls": [],
-    "technologies": ["angular", "ionic"]
+    "technologies": ["angular", "ionic", "bootstrap4", "firebase", "java", "android", "ios", "aws"]
   },
   {
     "name": "Indistinct",
