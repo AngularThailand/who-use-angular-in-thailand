@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2.1
+version: 2
 jobs:
   build:
     branches:
@@ -55,10 +55,10 @@ jobs:
       - run: npm run build:gh
 
       # run light house
-      # - run: sudo npm install -g @lhci/cli@0.3.x
-      # - run:
-      #     name: lhci autorun
-      #     command: lhci autorun
+      - run: sudo npm install -g @lhci/cli@0.3.x
+      - run:
+          name: lhci autorun
+          command: lhci autorun
 
       # deploy to GH page
       - deploy:

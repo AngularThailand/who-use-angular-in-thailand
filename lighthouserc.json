@@ -5,7 +5,7 @@
       "staticDistDir": "./dist/apps/who-use-angular-in-thailand"
     },
     "assert": {
-      "preset": "lighthouse:recommended",
+      "preset": "lighthouse:no-pwa",
       "assertions": {
         "offscreen-images": "off",
         "uses-webp-images": "off"
