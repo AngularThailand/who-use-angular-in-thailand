@@ -92,7 +92,7 @@
     "description": "Softwere and consult business solutions",
     "logo": "assets/companies/Infinite-staffing.png",
     "companyUrl": "https://infinite-staff.com",
-    "productUrls": [""],
+    "productUrls": [],
     "technologies": ["angular"]
   },
   {
