@@ -10,7 +10,7 @@ jobs:
         - gh-page
     docker:
       # specify the version you desire here
-      - image: circleci/node:10.16-browsers
+      - image: circleci/node:10.16-browsers-legacy
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -48,17 +48,17 @@ jobs:
       - run: npm run affected:test -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD
 
       # run e2e!
-      # - run: npm run pree2e
-      # - run: npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD -- --webdriver-update=false
+      - run: npm run pree2e
+      - run: npm run affected:e2e -- --exclude=angular-quiz,angular-quiz-e2e --base=HEAD~1 --head=HEAD -- --webdriver-update=false
 
       # run build
       - run: npm run build:gh
 
       # run light house
-      - run: sudo npm install -g @lhci/cli@0.3.x
-      - run:
-          name: lhci autorun
-          command: lhci autorun
+      # - run: sudo npm install -g @lhci/cli@0.3.x
+      # - run:
+      #     name: lhci autorun
+      #     command: lhci autorun
 
       # deploy to GH page
       - deploy:
