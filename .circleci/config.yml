@@ -56,9 +56,9 @@ jobs:
 
       # run light house
       - run: sudo npm install -g @lhci/cli@0.3.x
-      - run:
-          name: lhci autorun
-          command: lhci autorun
+      # - run:
+      #     name: lhci autorun
+      #     command: lhci autorun
 
       # deploy to GH page
       - deploy:
