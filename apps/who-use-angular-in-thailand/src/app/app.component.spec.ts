@@ -1,12 +1,12 @@
 import { CompanyService } from './services/company.service';
-import { ComponentFixture, async, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 import { of } from 'rxjs';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 const mockCompanyService = {
-  getCompanies: () => of({})
+  getCompanies: () => of({}),
 } as any;
 
 describe('AppComponent', () => {
@@ -29,16 +29,15 @@ describe('AppComponent Template', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AppComponent ],
-      providers: [
-        {provide: CompanyService, useValue: mockCompanyService}
-      ],
-      schemas: [NO_ERRORS_SCHEMA],
-    })
-    .compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [AppComponent],
+        providers: [{ provide: CompanyService, useValue: mockCompanyService }],
+        schemas: [NO_ERRORS_SCHEMA],
+      }).compileComponents();
+    }),
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
