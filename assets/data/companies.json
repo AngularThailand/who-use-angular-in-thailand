@@ -29,7 +29,7 @@
     "logo": "assets/companies/actimotive.png",
     "companyUrl": "https://actimotive.app",
     "productUrls": ["https://actimotive.app"],
-    "technologies": ["angular"]
+    "technologies": ["angular", "typescript", "rxjs", "firebase", "scss", "pwa", "webrtc"]
   },
   {
     "name": "IT One",
@@ -202,5 +202,13 @@
     "companyUrl": "http://www.kbtg.tech/th",
     "productUrls": ["http://www.kbtg.tech/th/#tech-serv"],
     "technologies": ["angular"]
+  },
+  {
+    "name": "H Lab",
+    "description": "RE-ENGINEERING THE HEALTHCARE SYSTEM",
+    "logo": "assets/companies/h-lab.jpg",
+    "companyUrl": "https://www.hlabconsulting.com/",
+    "productUrls": ["https://www.hlabconsulting.com/venti", "https://www.hlabconsulting.com/flow", "https://www.hlabconsulting.com/hint"],
+    "technologies": ["angular", "nestjs", "typescript", "rxjs", "scss", "pwa"]
   }
 ]
