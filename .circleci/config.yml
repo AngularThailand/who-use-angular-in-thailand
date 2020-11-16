@@ -55,7 +55,7 @@ jobs:
       - run: npm run build:gh
 
       # run light house
-      - run: sudo npm install -g @lhci/cli@0.3.x
+      # - run: sudo npm install -g @lhci/cli@0.3.x
       # - run:
       #     name: lhci autorun
       #     command: lhci autorun
