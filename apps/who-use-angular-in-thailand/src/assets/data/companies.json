@@ -29,7 +29,7 @@
     "logo": "assets/companies/actimotive.png",
     "companyUrl": "https://actimotive.app",
     "productUrls": ["https://actimotive.app"],
-    "technologies": ["angular"]
+    "technologies": ["angular", "typescript", "rxjs", "firebase", "sass"]
   },
   {
     "name": "IT One",
