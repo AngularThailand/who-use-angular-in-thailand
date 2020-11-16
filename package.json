@@ -70,7 +70,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.6.3",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
