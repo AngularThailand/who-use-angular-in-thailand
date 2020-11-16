@@ -8,11 +8,11 @@
     "technologies": ["angular", "angularjs", "typescript", "rxjs", "ngrx", "firebase", "aws"]
   },
   {
-    "name": "7 Peaks Software",
+    "name": "Seven Peaks Software",
     "description": "International design & software company based in Bangkok",
-    "logo": "assets/companies/7peaks.svg",
-    "companyUrl": "https://7peakssoftware.com",
-    "productUrls": ["https://7peakssoftware.com/our-work"],
+    "logo": "assets/companies/7peaks.png",
+    "companyUrl": "https://sevenpeakssoftware.com/",
+    "productUrls": [],
     "technologies": ["angular", "nx", "ngrx"]
   },
   {
@@ -208,7 +208,19 @@
     "description": "RE-ENGINEERING THE HEALTHCARE SYSTEM",
     "logo": "assets/companies/h-lab.jpg",
     "companyUrl": "https://www.hlabconsulting.com/",
-    "productUrls": ["https://www.hlabconsulting.com/venti", "https://www.hlabconsulting.com/flow", "https://www.hlabconsulting.com/hint"],
+    "productUrls": [
+      "https://www.hlabconsulting.com/venti",
+      "https://www.hlabconsulting.com/flow",
+      "https://www.hlabconsulting.com/hint"
+    ],
     "technologies": ["angular", "nestjs", "typescript", "rxjs", "scss", "pwa"]
+  },
+  {
+    "name": "ITOPPLUS",
+    "description": "DIGITAL MEDIA DESIGN",
+    "logo": "assets/companies/ITOPPLUS.png",
+    "companyUrl": "https://www.itopplus.com",
+    "productUrls": ["https://www.more-commerce.com", "https://www.autodigi.net"],
+    "technologies": ["angular", "nx", "next"]
   }
 ]
