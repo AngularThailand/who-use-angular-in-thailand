@@ -83,11 +83,26 @@
         "depConstraints": [
           {
             "sourceTag": "type:all",
-            "onlyDependOnLibsWithTags": ["type:all","type:page", "type:component", "type:util", "type:http", "type:resolver", "type:interface"]
+            "onlyDependOnLibsWithTags": [
+              "type:all",
+              "type:page",
+              "type:component",
+              "type:util",
+              "type:http",
+              "type:resolver",
+              "type:interface"
+            ]
           },
           {
             "sourceTag": "type:page",
-            "onlyDependOnLibsWithTags": ["type:page", "type:component", "type:util", "type:http", "type:resolver", "type:interface"]
+            "onlyDependOnLibsWithTags": [
+              "type:page",
+              "type:component",
+              "type:util",
+              "type:http",
+              "type:resolver",
+              "type:interface"
+            ]
           },
           {
             "sourceTag": "type:component",
@@ -103,13 +118,14 @@
           },
           {
             "sourceTag": "type:resolver",
-            "onlyDependOnLibsWithTags": ["type:http","type:util", "type:interface"]
+            "onlyDependOnLibsWithTags": ["type:http", "type:util", "type:interface"]
           },
           {
             "sourceTag": "type:api",
             "onlyDependOnLibsWithTags": ["type:interface", "type:util"]
           }
-        ]
+        ],
+        "enforceBuildableLibDependency": true
       }
     ]
   }

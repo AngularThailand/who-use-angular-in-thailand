@@ -129,7 +129,7 @@
               "apps/who-use-angular-in-thailand/tsconfig.app.json",
               "apps/who-use-angular-in-thailand/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand/**"]
+            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand/**/*"]
           }
         }
       }
@@ -154,7 +154,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/who-use-angular-in-thailand-e2e/tsconfig.json",
-            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/who-use-angular-in-thailand-e2e/**/*"]
           }
         }
       }
@@ -169,15 +169,14 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/angular-th/tsconfig.lib.json", "libs/angular-th/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/angular-th/**"]
+            "exclude": ["**/node_modules/**", "!libs/angular-th/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/angular-th/jest.config.js",
-            "tsConfig": "libs/angular-th/tsconfig.spec.json",
-            "setupFile": "libs/angular-th/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       }
@@ -258,15 +257,14 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/angular-quiz/tsconfig.app.json", "apps/angular-quiz/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!apps/angular-quiz/**"]
+            "exclude": ["**/node_modules/**", "!apps/angular-quiz/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/angular-quiz/jest.config.js",
-            "tsConfig": "apps/angular-quiz/tsconfig.spec.json",
-            "setupFile": "apps/angular-quiz/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       }
@@ -293,7 +291,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/angular-quiz-e2e/tsconfig.e2e.json",
-            "exclude": ["!apps/angular-quiz-e2e/**"]
+            "exclude": ["!apps/angular-quiz-e2e/**/*"]
           }
         }
       }
@@ -311,7 +309,8 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": ["apps/api/src/assets"],
+            "buildLibsFromSource": true
           },
           "configurations": {
             "production": {
@@ -337,14 +336,14 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/api/tsconfig.app.json", "apps/api/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": ["**/node_modules/**", "!apps/api/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/api/jest.config.js",
-            "tsConfig": "apps/api/tsconfig.spec.json"
+            "passWithNoTests": true
           }
         }
       }
@@ -359,14 +358,14 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/interfaces/tsconfig.lib.json", "libs/interfaces/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/interfaces/**"]
+            "exclude": ["**/node_modules/**", "!libs/interfaces/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/interfaces/jest.config.js",
-            "tsConfig": "libs/interfaces/tsconfig.spec.json"
+            "passWithNoTests": true
           }
         }
       }

@@ -3,22 +3,24 @@
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
-    "tsconfig.json": "*",
     "tslint.json": "*",
-    "nx.json": "*"
+    "nx.json": "*",
+    "tsconfig.base.json": "*"
   },
   "projects": {
     "who-use-angular-in-thailand": {
       "tags": ["scope:who-use-angular-in-thailand", "type:all"]
     },
     "who-use-angular-in-thailand-e2e": {
-      "tags": ["scope:who-use-angular-in-thailand", "type:e2e"]
+      "tags": ["scope:who-use-angular-in-thailand", "type:e2e"],
+      "implicitDependencies": ["who-use-angular-in-thailand"]
     },
     "angular-th": {
       "tags": ["scope:angular-th", "type:component"]
     },
     "angular-quiz-e2e": {
-      "tags": ["scope:angular-th", "type:e2e"]
+      "tags": ["scope:angular-th", "type:e2e"],
+      "implicitDependencies": ["angular-quiz"]
     },
     "angular-quiz": {
       "tags": ["scope:angular-quiz", "type:all"]
@@ -27,7 +29,18 @@
       "tags": ["scope:all", "type:api"]
     },
     "interfaces": {
-      "tags": ["scope:all","type:interface"]
+      "tags": ["scope:all", "type:interface"]
     }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
   }
 }
