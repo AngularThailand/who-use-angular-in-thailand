@@ -222,5 +222,13 @@
     "companyUrl": "https://www.itopplus.com",
     "productUrls": ["https://www.more-commerce.com", "https://www.autodigi.net"],
     "technologies": ["angular", "nx", "next"]
+  },
+  {
+    "name": "Profile Group",
+    "description": "Recruitment Solutions",
+    "logo": "assets/companies/profile-group.svg",
+    "companyUrl": "https://www.profilegroup.com",
+    "productUrls": ["https://www.talentfinder.be"],
+    "technologies": ["angular", "nx", "ngrx", "typescript", "rxjs", "pwa"]
   }
 ]
