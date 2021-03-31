@@ -230,5 +230,17 @@
     "companyUrl": "https://www.profilegroup.com",
     "productUrls": ["https://www.talentfinder.be"],
     "technologies": ["angular", "nx", "ngrx", "typescript", "rxjs", "pwa"]
+  },
+  {
+    "name": "CODIUM Co., Ltd.",
+    "description": "Software is our DNA. Enterprise applications, the next Uber, or cloud – we deliver.",
+    "logo": "assets/companies/codium.png",
+    "companyUrl": "https://www.codium.co/home",
+    "productUrls": [
+      "https://ememo.codium.co",
+      "https://work.fathailand.org",
+      "https://clubs.thaileague.co.th"
+    ],
+    "technologies": ["angular", "angularjs", "typescript", "rxjs"]
   }
 ]
