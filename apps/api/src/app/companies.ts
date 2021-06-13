@@ -174,11 +174,11 @@ export const companies = [
     technologies: ['angularjs', 'java'],
   },
   {
-    name: "MOLOG",
-    description: "No#1 Logistics Platform in Thailand",
-    logo: "assets/companies/molog.png",
-    companyUrl: "https://www.mologtech.com",
-    productUrls: ["https://app.mologtech.com"],
-    technologies: ["angular", "nodejs", "rxjs"]
-  }
+    name: 'MOLOG',
+    description: 'No#1 Logistics Platform in Thailand',
+    logo: 'assets/companies/molog.png',
+    companyUrl: 'https://www.mologtech.com',
+    productUrls: ['https://app.mologtech.com'],
+    technologies: ['angular', 'nodejs', 'rxjs'],
+  },
 ];
