@@ -236,11 +236,15 @@
     "description": "Software is our DNA. Enterprise applications, the next Uber, or cloud – we deliver.",
     "logo": "assets/companies/codium.png",
     "companyUrl": "https://www.codium.co/home",
-    "productUrls": [
-      "https://ememo.codium.co",
-      "https://work.fathailand.org",
-      "https://clubs.thaileague.co.th"
-    ],
+    "productUrls": ["https://ememo.codium.co", "https://work.fathailand.org", "https://clubs.thaileague.co.th"],
     "technologies": ["angular", "angularjs", "typescript", "rxjs"]
+  },
+  {
+    "name": "MOLOG",
+    "description": "No#1 Logistics Platform in Thailand",
+    "logo": "assets/companies/molog.png",
+    "companyUrl": "https://www.mologtech.com",
+    "productUrls": ["https://app.mologtech.com"],
+    "technologies": ["angular", "nodejs", "rxjs"]
   }
 ]
